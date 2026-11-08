@@ -34,7 +34,7 @@ The data files themselves are too big for git (GitHub caps files at 100 MB), so 
 | [v4-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v4-data) | V4 - 20,000 accounts: unified timeline + 57 tables | (uploading) | |
 | [v4-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v4-data) | V4 - answer key (do not load into Aible) | (uploading) | |
 
-`SHA256SUMS.txt` in each release lists checksums.
+Each release has a `SHA256SUMS-vN.txt` checksum file.
 
 ## Downloading and unpacking
 Single files are ordinary `.tar.gz` archives. Large ones are split into numbered parts - download **all** parts of an archive into one folder, then:
