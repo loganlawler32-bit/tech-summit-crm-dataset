@@ -26,13 +26,13 @@ The data files themselves are too big for git (GitHub caps files at 100 MB), so 
 
 | Release | Contents | Files | Compressed |
 |---|---|---|---:|
-| [v1-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v1-data) | V1 - all 17 CSVs + SQLite database | (uploading) | |
-| [v2-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v2-data) | V2 - 500-account sample: unified timeline + 57 tables | (uploading) | |
-| [v2-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v2-data) | V2 - answer key (do not load into Aible) | (uploading) | |
-| [v3-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v3-data) | V3 - 10,000 accounts: unified timeline + 57 tables | (uploading) | |
-| [v3-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v3-data) | V3 - answer key (do not load into Aible) | (uploading) | |
-| [v4-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v4-data) | V4 - 20,000 accounts: unified timeline + 57 tables | (uploading) | |
-| [v4-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v4-data) | V4 - answer key (do not load into Aible) | (uploading) | |
+| [v1-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v1-data) | V1 - all 17 CSVs + SQLite database | `v1-salesforce-crm.tar.gz` | 0.13 GB |
+| [v2-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v2-data) | V2 - 500-account sample: unified timeline + 57 tables | `v2-sample500-aible_load.tar.gz` | 0.14 GB |
+| [v2-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v2-data) | V2 - answer key (do not load into Aible) | `v2-sample500-answer_key.tar.gz` | 0.00 GB |
+| [v3-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v3-data) | V3 - 10,000 accounts: unified timeline + 57 tables | `v3-aible_load.tar.gz.001` … `.002` (2 parts) | 3.28 GB |
+| [v3-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v3-data) | V3 - answer key (do not load into Aible) | `v3-answer_key.tar.gz` | 0.01 GB |
+| [v4-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v4-data) | V4 - 20,000 accounts: unified timeline + 57 tables | `v4-aible_load.tar.gz.001` … `.003` (3 parts) | 5.81 GB |
+| [v4-data](https://github.com/loganlawler32-bit/tech-summit-crm-dataset/releases/tag/v4-data) | V4 - answer key (do not load into Aible) | `v4-answer_key.tar.gz` | 0.03 GB |
 
 Each release has a `SHA256SUMS-vN.txt` checksum file.
 
