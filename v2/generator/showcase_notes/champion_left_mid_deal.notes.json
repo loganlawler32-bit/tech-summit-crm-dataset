@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2021-04-13",
+    "kind": "meeting",
+    "author": "Jamie Kim",
+    "contact": "Tara Clark",
+    "subject": "Intro w/ Tara Clark (CTO) - FY22 priorities",
+    "body": "Attendees: Tara Clark (CTO), Robin Lopez (Infra Mgr), Abigail Reyes (Dir Network Eng); Orvane: Jamie Kim, Thomas Herrera (SA), Hao Stewart\n\n- Tara owns all infra + EUC budget. Came from a shop that standardized on Orvane; openly prefers one vendor across client, server, storage.\n- FY22: Windows 11 migration (starting late in year), DC refresh, ransomware resilience, hybrid work.\n- Environment: vSphere across 2 DCs (Seattle + Tacoma plant), Oracle Cloud for ERP, third-party backup software on generic disk. Strata 500 for CAD/PLM file data.\n- Ransomware: had a scare on a plant file share last year. Wants immutable copies - opening for Vault.\n- Tara: \"Bring me a 3-year plan, not a quote.\"\n\nActions: Jamie - 3-yr infra roadmap draft; Thomas - Vault immutability overview; Hao - Mesh campus refresh discovery with Abigail.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2021-11-22",
+    "kind": "email_out",
+    "author": "Hao Stewart",
+    "contact": "Adam Pham",
+    "subject": "Mesh switch refresh - Tacoma plant floor",
+    "body": "Hi Adam,\n\nAttaching the revised BOM for the Tacoma plant floor closets (Mesh S1148 PoE, 18 units) with the 10G uplink option you asked for. Abigail said you'd be the one to validate the PoE budget per closet.\n\nThanks,\nHao Stewart\nNetworking Specialist | Orvane Technologies\n\n> Undeliverable: adam.pham@luxiumprecision.co - mailbox unavailable",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-01-21",
+    "kind": "call",
+    "author": "Darren Russell",
+    "contact": "Robin Lopez",
+    "subject": "Atlas order status / BMC baseline",
+    "body": "Robin confirmed the 9 Atlas 240 hosts from last June (SO-30098473, $263,453) are all in production, plus the 1U nodes from SO-30098431. Everything from 2021 went on PO P8350208 - they reuse the same PO for the whole year, AP draws it down. Next batch of 1U 1-socket nodes going into the Seattle vSphere cluster as ESXi hosts for plant MES apps. Asked for BMC firmware baseline + Orvane Manage plug-in for vCenter. Robin says Tara wants every new host on Orvane going forward.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2023-01-30",
+    "kind": "note",
+    "author": "Brooke Kim",
+    "contact": "",
+    "subject": "Vault DP win - Luxium",
+    "body": "Closed won 0065f00004YrI9XAAV Vault DP x1 ($223,667). SO-30098685 ($240,442) incl ProCare, on PO P8082100 - same PO as Jamie's Strata Object x2 order two weeks ago (SO-30098629, $189,488).\nPositioning that won: immutable snapshots + isolated recovery copy for the plant file shares, with Strata Object as the long-term retention tier. Third-party backup software stays as the catalog for now - Vault is the target. Tara Clark signed off personally after Robin's POC. Next: second appliance for Tacoma once FY25 budget opens. Handing to Darren Park 2/1.",
+    "opportunity_id": "0065f00004YrI9XAAV"
+  },
+  {
+    "date": "2023-09-15",
+    "kind": "chatter",
+    "author": "Monica Tremblay",
+    "contact": "",
+    "subject": "Lost servers to Helixon",
+    "body": "fyi lost 0065f00004YrCs3AAF ($194,035) to Helixon. Price - they came in ~18% under on equivalent hosts. Tara was out on leave for the decision and procurement ran it on price alone. Lesson: when Tara isn't in the room we lose.",
+    "opportunity_id": "0065f00004YrCs3AAF"
+  },
+  {
+    "date": "2023-11-02",
+    "kind": "note",
+    "author": "Thanh Gutierrez",
+    "contact": "",
+    "subject": "Account takeover - Luxium Precision",
+    "body": "Picked up Luxium 10/17 after 3 months vacant. Anthony's notes stop in July.\nKey facts:\n- Tara Clark (CTO) is the power. She brought Orvane back in after the Helixon server loss. All infra decisions go through her.\n- Robin Lopez + Jessica Robertson run infra day-to-day. Emily Park is procurement - strict on 3 bids above $250K.\n- Installed: ~985 Aster 3 14 G1 plus newer Aster 7s, Cadence 3 Micro/SFF in plants, Strata 500 + 2x Strata Object nodes, Vault DP2400s + a DP8900.\n- Helixon is the threat on compute.\nPlan: re-engage Tara, get FY25 roadmap meeting.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-05-21",
+    "kind": "meeting",
+    "author": "James Lefebvre",
+    "contact": "Tara Clark",
+    "subject": "Infra roadmap FY25-FY27 working session",
+    "body": "Attendees: Tara Clark, Jessica Robertson, Linda Nair (Virtualization), Bianca Cohen (DC Ops); Orvane: James Lefebvre, Min-jun Chavez (SA), Seo-yeon's replacement TBD, Hiro Gray\n\nDiscussion\n- VMware: renewal under the new per-core subscription model roughly doubles their spend. Tara wants to cut host count from 48 to ~30 by moving to denser nodes, and keep the hypervisor option open.\n- Options: (1) 3-tier refresh - Atlas 2-socket + Strata 500/Object for files, (2) Converge HCI for general VMs, Atlas for MES/plant, (3) mixed.\n- Linda: storage vMotion pain on current arrays; wants NVMe for the PLM database.\n- Bianca: Seattle DC at 8 kW/rack limit, Tacoma ~6 kW. Denser nodes need a power check.\n- Tara's framing: one multi-year refresh, ~$1.2M over FY26-27, phased. She'll sponsor it to the CFO. Wants Orvane as sole vendor if numbers work.\n\nActions\n- Min-jun: reference architecture for option 2 + host consolidation math\n- James: phased commercial model, include Orvane Financial Services option\n- Hiro: firmware/ProCare inventory on current hosts",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-12-23",
+    "kind": "chatter",
+    "author": "Min-jun Chavez",
+    "contact": "",
+    "subject": "Interim host quote pulled - not lost",
+    "body": "Pulled the interim ~$540K host quote we'd been holding for Q4. It's not lost - Tara folded it into the bigger FY27 refresh, so it was never opened as an opp. Mentioning it so nobody counts it as a Helixon loss in the win/loss report.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-03-11",
+    "kind": "meeting",
+    "author": "Carly Vaughn",
+    "contact": "Tara Clark",
+    "subject": "Refresh scoping - phase 1 / phase 2",
+    "body": "Attendees: Tara Clark (CTO, exec sponsor), Jessica Robertson, Emily Park (Procurement), Bianca Cohen; Orvane: Carly Vaughn, Ananya Ramirez, Min-jun Chavez, Matthew Shah\n\nAgenda: confirm phasing, commercial path, timeline\n\nPhase 1 (Q3-Q4): 5x Atlas 280 for plant MES + VDI hosts. Quick win, replaces end-of-warranty 1U nodes.\nPhase 2 (FY27): core refresh - ~24 Atlas 2-socket nodes + 2x Converge HCI clusters (4 nodes each), Strata 500 / Object expansion for PLM. Opp created: 0065f00004Ys4psAAB $1.24M, close 3/27/26.\n\nCommercial\n- Emily: anything over $500K needs 3 bids and a formal eval. Tara will write the justification if we're within 10% of the low bid.\n- Board approves capital in October. Tara presenting.\n- Helixon is pitching HCI on a non-VMware hypervisor - attractive given VMware renewal costs.\n\nRisks: single-threaded on Tara. Need a second exec (Carly Morin, VP EA?).\nActions: Ananya - Phase 1 quote; Min-jun - phase 2 design doc; Carly - meet Carly Morin.",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2025-07-21",
+    "kind": "email_out",
+    "author": "Carly Vaughn",
+    "contact": "Tara Clark",
+    "subject": "Phase 2 proposal v3 + board deck inputs",
+    "body": "Hi Tara,\n\nAttaching proposal v3 for the phase 2 refresh. Changes from v2: Converge HCI node count down to 8, Atlas 2-socket count up to 24, ProCare Plus 5-yr, and an Orvane Financial Services option that spreads the spend across FY27-FY28. I also included two slides for your October board deck.\n\nPhase 1 Atlas 280 config is final; just waiting on Emily for the PO.\n\nThanks,\nCarly Vaughn\nAccount Executive | Orvane Technologies\n\n---\nAutomatic reply: Tara Clark is no longer with Luxium Precision Corporation. For infrastructure matters please contact Jessica Robertson.",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2025-07-23",
+    "kind": "chatter",
+    "author": "Ananya Ramirez",
+    "contact": "",
+    "subject": "Tara gone??",
+    "body": "@Carly Vaughn heads up - Jessica told me on the phase 1 Atlas 280 config call that Tara resigned last week. Last day was the 18th. No replacement named. Our $1.24M is single-threaded on her.",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2025-08-28",
+    "kind": "call",
+    "author": "Carly Vaughn",
+    "contact": "Jessica Robertson",
+    "subject": "Who owns phase 2 now?",
+    "body": "Call with Jessica re the refresh after Tara's exit.\n- No one is signing anything big until a new tech exec is hired. Search is on, Jessica thinks a CIO role (not CTO).\n- Carly Morin (VP EA) is interim on vendor matters but \"doesn't want to inherit Tara's decisions.\"\n- Tyler Gupta (CISO) also leaving mid-August - security review of the HCI design is stalled.\n- Jessica personally still wants the refresh - hosts are out of warranty, VMware renewal is in March.\n- Board slot in October probably lost.\nMoved opp to upside from commit. Kept close date 3/27/26 for now.",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2025-09-30",
+    "kind": "chatter",
+    "author": "Terrence Rao",
+    "contact": "",
+    "subject": "Where Tara landed",
+    "body": "fyi saw on LinkedIn Tara Clark is now CIO at another Orvane customer (LE West I think - Carly can you check who covers it?). Could be a reference for phase 2 and a new door for us. Her Luxium contact record still shows Active - two of them actually.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-10-07",
+    "kind": "note",
+    "author": "Darren Park",
+    "contact": "",
+    "subject": "Vault order - no Tara this time",
+    "body": "SO-30098839 ($111,976) booked yesterday - Vault ProCare renewal + immutability licensing for the Tacoma appliance. No PO number on it; Emily says their FY blanket P3075343 covers it. Tara used to approve these in one email; this one took Carly Morin + Jessica + three weeks. Vault DP8900 FMCPG3Q is ~88% - next is 0065f00004Ys9PmAAJ ($71,892) for capacity. Third-party backup software renewal comes up in FY27 - full Vault displacement was Tara's idea; nobody is pushing it now.",
+    "opportunity_id": "0065f00004Ys9PmAAJ"
+  },
+  {
+    "date": "2025-10-23",
+    "kind": "meeting",
+    "author": "Carly Vaughn",
+    "contact": "Heather Sato",
+    "subject": "Intro - Heather Sato (CIO, started 10/6)",
+    "body": "Attendees: Heather Sato (CIO), Carly Morin (VP EA), Jessica Robertson; Orvane: Carly Vaughn, Min-jun Chavez, Hiro Gray\n\n- Heather started 10/6. Came from a manufacturer that ran Helixon HCI. Polite but direct: she will re-baseline all infrastructure vendors before committing to anything over $250K.\n- Plans a formal RFP in Q1 covering compute, HCI, storage and backup. Our phase 2 proposal will be \"an input, not the plan.\"\n- Her priorities: ransomware resilience (still the #1 board topic), VMware cost, simplifying vendor count.\n- Asked for: installed base summary, ProCare contract dates, our view on hypervisor alternatives.\n- Did not react to the board deck slides we'd prepped for Tara.\n\nTakeaways: deal is back to discovery. Realistic decision April-May, not 3/27. Need to rebuild relationships with Heather + Carly Morin; Emma Russell (CDO) and Devin Kim (AI & Data) may matter for GPU nodes.\nActions: Hiro - installed base + ProCare report by 11/7; Min-jun - hypervisor-neutral design; Carly - exec briefing with our regional VP.",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2025-11-18",
+    "kind": "meeting",
+    "author": "Min-jun Chavez",
+    "contact": "Linda Nair",
+    "subject": "Technical re-baseline workshop",
+    "body": "Attendees: Linda Nair (Virtualization), Jessica Robertson, Courtney Marshall (Storage Admin), Emily Rao (ML Eng); Orvane: Min-jun Chavez, Ananya Ramirez, Matthew Shah, Darren Park\n\n- VMware renewal March 2026. Heather asked team to price one alternative hypervisor. Linda worried about plant MES vendor support on anything but vSphere.\n- Hosts: 48 today, target 28-32. Atlas 2-socket w/ 64 cores, 1TB RAM per node gets them there.\n- Storage: Strata 500 B4R82XW at ~91%, ~3.6 TB/mo - PLM growth. Strata Object V1ZBB27 ~89% (6.7 TB/mo), 6H72Y41 ~68%. Need expansion in FY27 regardless.\n- Vault DP8900 FMCPG3Q ~88%, DP2400 FKBY645 ~80%. Darren to bring capacity plan.\n- AI: Emily's team wants 2 GPU nodes (48GB class) for vision QA on the line. Fits Atlas AI.\n- Linda asked for hypervisor-neutral sizing so we can respond to RFP either way.\n\nActions: Min-jun - two BOMs (vSphere / alt hypervisor); Matthew - Strata Object expansion quote; Darren - Vault capacity plan.",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2025-12-09",
+    "kind": "chatter",
+    "author": "Monica Howard",
+    "contact": "",
+    "subject": "CRM cleanup - Tara Clark",
+    "body": "@Carly Vaughn Tara Clark still Active in CRM (2 records, one with no seniority) and she's still primary contact on 0065f00004Ys4psAAB. Opp is still at Proposal / 3-27 close with $1.24M. Also Shannon Baker (virtualization) left end of November, still Active. And Matthew's Strata Object order SO-30098873 is sitting on Awaiting PO. Want me to clean up or will you?",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2025-12-10",
+    "kind": "note",
+    "author": "Ananya Ramirez",
+    "contact": "",
+    "subject": "Atlas 280 x5 closed won",
+    "body": "0065f00004Ys0XHAAZ closed won $220,375. Order SO-30098881 $234,699 (diff is install + ProCare). PO P3075343 again - Emily says it's their FY blanket and Luxium is close to drawing it down. Heather signed it because it was \"already in flight,\" but said phase 2 goes to RFP. Phase 1 done - five months late. I roll off the account at month end.",
+    "opportunity_id": "0065f00004Ys0XHAAZ"
+  },
+  {
+    "date": "2026-01-21",
+    "kind": "email_in",
+    "author": "Carly Vaughn",
+    "contact": "Emily Park",
+    "subject": "Infrastructure RFP - schedule",
+    "body": "Hello Carly,\n\nLuxium will issue the Infrastructure Modernization RFP on February 9. Responses due March 6, finalist presentations week of March 23, award targeted late April. Scope: compute, HCI, primary/file storage, backup and recovery, 5-yr support. Heather Sato is the executive owner; Carly Morin and Jessica Robertson are on the evaluation committee.\n\nPlease send the name of your RFP contact by January 30.\n\nRegards,\nEmily Park\nProcurement Manager\nLuxium Precision Corporation",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  },
+  {
+    "date": "2026-01-26",
+    "kind": "note",
+    "author": "Carly Vaughn",
+    "contact": "",
+    "subject": "Pipeline update - Luxium",
+    "body": "- 0065f00004Ys6uFAAR ($196,649, Qualify) - folding into the RFP scope, will close it out after forecast call.\n- 0065f00004Ys4psAAB ($1.24M): moving close to 4/30 after RFP schedule. Still showing 3/27 until forecast call. Stage really = Qualify again.\n- Server specialist seat empty since Ananya left 12/30 - need coverage for RFP. Ahmed Vargas (services, started 1/5) owns the ProCare/deployment section.\n- Competitors: Helixon (Heather's former vendor) is the favorite going in.\n- Tara: now CIO elsewhere. Asking the AE who covers her new company for an intro - possible reference call for Heather, and a way to find out what Tara told her successor about us.",
+    "opportunity_id": "0065f00004Ys4psAAB"
+  }
+]

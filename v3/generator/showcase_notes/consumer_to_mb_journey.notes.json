@@ -1,0 +1,182 @@
+[
+ {
+  "date": "2021-03-10",
+  "kind": "email_out",
+  "author": "Rachel Fortin",
+  "contact": "Sean Kelly",
+  "subject": "Orvane small business program - Meadow Port",
+  "body": "Hi Sean,\n\nI'm the Orvane account manager covering small businesses in New Mexico. I noticed Meadow Port is growing quickly and wanted to introduce our small business program - business pricing, ProCare support and a dedicated contact (me).\n\nWould you have 15 minutes next week?\n\nBest,\nRachel Fortin\nAccount Manager | Orvane Technologies\n\n[No reply. Contact came from a purchased list - title \"Network Manager\".]",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2021-04-02",
+  "kind": "call",
+  "author": "Rachel Fortin",
+  "contact": "Shane Hayes",
+  "subject": "Inbound - business account setup",
+  "body": "Inbound from web chat - Shane Hayes (co-founder/CTO) wants a business account. Personal care products, manufacturing + DTC e-commerce, Albuquerque. ~60 people, hiring fast.\n\n- Current devices are \"a mess\" - mix of whatever people brought + some Orvane laptops Shane picked up himself. Didn't ask where from.\n- No real IT dept. Shane's brother Thomas handles assets/onboarding part-time.\n- Server closet: 2 hosts on vSphere 7, backup software to a NAS.\n- Needs: 15-20 laptops over next 6 months for new hires, docks + monitors.\n\nSet up SB account, sent credit app. Next: quote 10x Aster 3 14 + Tether docks. Shane prefers to pay by card for now.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2021-09-14",
+  "kind": "meeting",
+  "author": "Rachel Fortin",
+  "contact": "Thomas Hayes",
+  "subject": "Asset review w/ Thomas Hayes",
+  "body": "Met Thomas (IT asset mgr, Shane's brother) at their office.\n- Inventory spreadsheet: 41 laptops, 12 desktops. ~half Orvane. Some Orvane units aren't in our system under Meadow Port - Thomas thinks \"Shane bought those before we had the account\". Didn't dig in.\n- Planning a second production site next year (new site build-out) - ~40 production floor PCs, small form factor, need to survive dust.\n- Want a standard image. Asked about zero-touch deployment - told them it's available on business orders, not consumer ones.\nNext: SFF quote for new site, ProCare Basic on all new units.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-02-18",
+  "kind": "note",
+  "author": "Rachel Fortin",
+  "contact": "Shane Hayes",
+  "subject": "New site order - went through the store",
+  "body": "New production site order landed on the online store instead of my quote - SO-30284322 $59,383, Cadence 3 SFF for the floor + a few Asters. Shane paid by card, no PO, AP doesn't issue POs yet. My quote was cheaper per unit and had zero-touch included. Not linked to any opp. I'm off this territory in May, need to hand off cleanly.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-08-03",
+  "kind": "call",
+  "author": "Jennifer Gagnon",
+  "contact": "Scott Moore",
+  "subject": "Intro - new AE",
+  "body": "Intro call w/ Scott Moore (new Dir IT Procurement). I took over in late June - account had no owner for ~6 weeks.\n\n- Scott said Rachel \"promised\" a volume discount tier on all future orders. Nothing in notes about that. Told him I'd check.\n- Second-site build-out mostly done (bulk of it bought on the online store in Feb).\n- Thomas Hayes left in January - Scott didn't know who's handling assets now. Our CRM still lists Thomas as active.\n- They closed a funding round in June for the new site - more hiring.\n\nNext: confirm the discount thing with Rachel's old manager. Send Scott a POs-required process doc - they want to start using POs.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-10-04",
+  "kind": "email_out",
+  "author": "Jennifer Gagnon",
+  "contact": "Scott Moore",
+  "subject": "Q4 pricing - Meadow Port",
+  "body": "Hi Scott,\n\nAs discussed, attached is the Q4 pricing on Aster 3 14 G5 + Clarity monitors. Unfortunately I couldn't find an approved volume tier from Rachel, but I've applied the best SB pricing available.\n\nBest,\nJennifer\n\n---\nUndeliverable: scott.moore@meadowportproducts.com - The email account that you tried to reach does not exist.\n\n[Called main line - Scott left in Sept. Got pointed to Priya Holt (storage & backup mgr), she'll take vendor stuff for now.]",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-03-16",
+  "kind": "meeting",
+  "author": "Grant Barnes",
+  "contact": "Colin Kelly",
+  "subject": "Ransomware resilience - backup discussion",
+  "body": "Attendees: Colin Kelly (Storage & Backup Mgr - new hire), Shane Hayes; Grant Barnes\n\nContext: Their insurer is requiring immutable backups at renewal (June). Colin was hired to fix backup.\n\nCurrent:\n- 3 vSphere 7 hosts now (2 at HQ, 1 at new site). ~45TB protected.\n- Backup software (Veeam-style competitor product) to a single NAS. No offsite copy, no immutability. Backup window ~8 hrs.\n- RPO 24h, wants 4h for ERP + e-commerce order DB. RTO <4h for order DB - \"every hour down is lost sales\".\n\nProposal: Vault DP with immutable snapshots as the backup target, keep their backup software for now (Colin doesn't want to change both at once). Second Vault at the new site for replication later.\n\nDecision: Shane signs, needs CFO sign-off (Scott Gray) over $100K. They want POs now - first PO-driven order.\n\nActions: Grant send quote (Vault DP5900). Colin send capacity report.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-08-10",
+  "kind": "note",
+  "author": "Grant Barnes",
+  "contact": "Scott Gray",
+  "subject": "Vault shipped - still no PO",
+  "body": "Vault DP5900 + install booked as SO-30284810 ($91,969). Shane approved by email again - no PO, no opp (I quoted straight off the March meeting and never created one, my miss). Missed the June insurer deadline by 6 weeks - they got an extension. Scott Gray says POs are mandatory from Q3 on.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-01-26",
+  "kind": "chatter",
+  "author": "Grant Barnes",
+  "contact": "",
+  "subject": "Handoff - buying pattern",
+  "body": "fyi for handoff, my last week on Meadow Port. Their biggest orders keep coming in sideways: $158,689 on the online store in Dec '22 (SO-30284532, card), Vault in Aug with no PO, Oct order SO-30284860 hit PO Amount Mismatch. Dec order SO-30284962 ($120,198, PO 4597951836) was the first clean one. Storage opp 0065f00004j6I6dAAE ($225,937) lost in Nov - budget went to desktops. @Spencer Diaz they buy wherever is fastest, get them on Premier.",
+  "opportunity_id": "0065f00004j6I6dAAE"
+ },
+ {
+  "date": "2024-03-07",
+  "kind": "call",
+  "author": "Shannon Gauthier",
+  "contact": "Lisa Cole",
+  "subject": "Win 11 readiness - found unlinked consumer units",
+  "body": "Call w/ Lisa Cole (IT Asset Mgr, started late 2023). Working on Win 11 migration plan.\n\nLisa ran an Orvane Manage inventory. 6 Orvane serials report in but aren't on the Meadow Port account / have no ProCare. Asked about them - Lisa: \"Oh, those are Shane's. He bought the first two Asters on the website with his personal card back in early 2021, before we had a company account. And then some more later the same way, I think.\" Some are Nova consumer laptops.\n\nImpact:\n- Consumer warranty only, no ProCare, no zero-touch / Autopilot registration, can't be managed under their business entitlement.\n- Several are on Win10, some (the Novas) aren't on the business Win11 image.\n- None of these purchases show on our account history, so our install base and spend for this customer is understated.\n\nNext: ask support whether consumer serials can be moved to the business account. Get list of serials from Lisa.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-03-12",
+  "kind": "email_out",
+  "author": "Shannon Gauthier",
+  "contact": "Priya Holt",
+  "subject": "Win 11 migration - device list",
+  "body": "Hi Priya,\n\nLisa mentioned you still have the 2021 asset spreadsheet from Thomas - attached is the device list with the 6 units we couldn't match to your business account. Could you confirm who should own the decision on whether we replace or re-register those?\n\nThanks,\nShannon Gauthier\nInside Client Specialist | Orvane Technologies\n\n[Bounced - Priya Holt left end of Feb. Lisa owns it.]",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-05-17",
+  "kind": "note",
+  "author": "Spencer Diaz",
+  "contact": "Lisa Cole",
+  "subject": "Design team order",
+  "body": "Jamie booked SO-30285100 ($138,632) - Aster 7 16 (64GB / 2TB) for the product design + packaging team, docks, Clarity 32s. PO field says \"N/A\" - Lisa says purchasing process is \"in flux\" again. Discount was above my line, approval pending. Order not linked to an opp.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-10-18",
+  "kind": "note",
+  "author": "Jamie Tran",
+  "contact": "Colin Nguyen",
+  "subject": "Atlas 120 x8 won - ERP staging + warehouse",
+  "body": "Won 0065f00004j6aBIAAY - 8x Atlas 120 for ERP migration staging + warehouse edge ($188,630). SO-30285188 $197,825, PO 4595096886 - clean PO for once. This is what was left of the storage opp that died in July (0065f00004j6FQeAAM). Colin Nguyen (Network Mgr) driving the warehouse network side - scanners, label printers on separate VLAN, Mesh refresh next. They're ~300 people per Lisa.",
+  "opportunity_id": "0065f00004j6aBIAAY"
+ },
+ {
+  "date": "2024-11-19",
+  "kind": "chatter",
+  "author": "Chad Rodriguez",
+  "contact": "",
+  "subject": "Consumer serials - support answer",
+  "body": "picked up client seat on Meadow Port (vacant since Sept). Shannon's open item on Shane's consumer-bought units: support says consumer and commercial entitlements can't be merged - each serial needs a ProCare uplift SKU bought separately, and Nova models aren't eligible. Lisa's count is now 4, not 6 (2 retired). Proposing: replace the Novas, uplift the Asters.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-04-08",
+  "kind": "chatter",
+  "author": "Spencer Diaz",
+  "contact": "",
+  "subject": "Segment / firmographics",
+  "body": "fyi Meadow Port flagged Medium Business for FY25, but our firmographic record still says ~170 employees. Lisa says they're over 300. Consumer purchases from 2021 + online store orders are why their lifetime spend looks small. Opened data ticket.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-08-20",
+  "kind": "meeting",
+  "author": "Ananya Patel",
+  "contact": "Shane Hayes",
+  "subject": "Account planning - new AE",
+  "body": "Attendees: Shane Hayes (CTO), John Herrera (Dir IT Procurement), Scott Gray (CFO, last 15 min); Ananya Patel (AE since July), Scott Kennedy, Jamie Tran\n\nIntro + planning. Spencer left in June, AE seat empty for a month.\n\nBusiness: filed for IPO, expected Nov. ~360 employees across HQ, production site and warehouse. Scott Gray: SOX readiness means asset tracking + purchasing controls have to be clean - \"no more card purchases on the website, no more orders without a PO.\"\n\nPriorities FY26:\n- Hybrid work (~120 office staff): Aster 5 13 + Tether docks + Clarity, standard image, zero-touch.\n- ERP migration cutover in Q1 (Jamie: Vault DP5900 Z0MY1D2 is past 80% - needs capacity before cutover; Strata 300s OK).\n- Last Win 10 holdouts - mostly Shane's old consumer-bought units.\n\nPartner: Ironclad Data Partners has been selling them storage services + some devices since spring. John likes them for project work.\nCompetition: Lumora is pitching Scott Gray a desktop-as-a-service offer for the hybrid wave.\n\nDecisions: All purchases go through POs + Premier portal from Sept. Ironclad for services delivery, direct for hardware - John to confirm.\n\nActions: Scott Kennedy hybrid work quote. Jamie Strata expansion sizing. Ananya clean up contacts (Sean Kelly still active in CRM - left in 2021).",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-11-14",
+  "kind": "chatter",
+  "author": "Ananya Patel",
+  "contact": "",
+  "subject": "Ironclad duplicate registration",
+  "body": "@Scott Kennedy Ironclad registered the same hybrid work deal we have as 0065f00004j8MpQAAU (close date 10/6 already passed - need to update). Their order SO-30285540 ($55,696) came in 10/30 and sat on Awaiting PO - Lisa says they never sent Ironclad a PO for it, one showed up after the hold. Our direct wave 1 order SO-30285552 ($122,204) shipped 11/3. Customer is confused who to buy from. Also IPO priced this week - Scott Gray will be locking down vendor lists.",
+  "opportunity_id": "0065f00004j8MpQAAU"
+ },
+ {
+  "date": "2026-01-15",
+  "kind": "email_in",
+  "author": "Ananya Patel",
+  "contact": "Elizabeth Lindqvist",
+  "subject": "Invoice questions - multiple payments",
+  "body": "Hi Ananya,\n\nWe're cleaning up our AP ledger for year-end audit. A few questions:\n\n1. We have 3 payments to Orvane in December that your remittance team shows as \"unapplied.\" Can you tell me which invoices they should go against? Payment refs attached.\n2. Several invoices from Ironclad Data Partners reference Orvane equipment but don't have our PO numbers on them. Our auditors are asking.\n3. Is there a way to get one statement for everything we've bought from Orvane, including the older purchases Shane made on the website? Lisa says those don't show on our account.\n\nThanks,\nElizabeth Lindqvist\nAP Specialist, Meadow Port Products L.P.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2026-01-21",
+  "kind": "note",
+  "author": "Andrew Powell",
+  "contact": "Lisa Cole",
+  "subject": "ProCare uplift + ITAD scope",
+  "body": "Scoping two services items for FY27 Q1, no opps yet (Ananya wants them on one services opp):\n- ProCare Plus uplift for the remaining Asters Shane bought on the consumer site in 2021 + older SB units, so they're under one entitlement for the SOX asset audit.\n- ITAD + data sanitization for the Novas and last Win10 units being retired, certificates per serial (auditors want them).\nSO-30285579 ($29,625, PO 4514980391) in Nov was deployment services for hybrid wave 1. Lisa is the decision maker on both; John Herrera signs.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2026-01-28",
+  "kind": "note",
+  "author": "Scott Kennedy",
+  "contact": "Lisa Cole",
+  "subject": "Account summary for FY27 planning",
+  "body": "Summary for whoever needs it (this account has changed hands a lot):\n- Started as founder Shane Hayes buying laptops on our consumer web store with his personal card in early 2021 (2 orders, ~5 units incl. Nova consumer models - Lisa's list differs). Those were never linked to the business account. SB account opened Apr 2021, MB from FY25. Now ~363 employees (firmographics say 259), public since Nov 2025.\n- Install: ~56 Cadence 5 Tower G5, ~74 Cadence 3 Micro, 32 Cadence 3 SFF G5, ~50 Aster 7 14/16 G5, 39 Wisp 7000 mobile thin clients in warehouse, 8 Atlas 120, Vault DP5900 x2 (Z0MY1D2 at 82.5%, +1.56TB/mo), Strata 300 x4. 36 open security advisories (3 risk accepted).\n- Buying behavior: historically card/online store, now PO + Premier only (SOX) - though 1/27 order SO-30285648 still went through the store. Ironclad Data Partners active, overlapping registrations. Lumora pitching DaaS.\n- Open: 5 client devices opps (hybrid work waves), Servers & HCI 0065f00004j8DK3AAM ($60,225), Mesh refresh 0065f00004j8HTTAA2 ($82,169), Manage/Shield software 0065f00004j8ISgAAM.",
+  "opportunity_id": "0065f00004j8HTTAA2"
+ }
+]

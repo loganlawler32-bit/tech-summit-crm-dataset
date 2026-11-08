@@ -1,0 +1,182 @@
+[
+ {
+  "date": "2021-04-12",
+  "kind": "email_out",
+  "author": "Sneha Gauthier",
+  "contact": "Jenna Cruz",
+  "subject": "Juniper Crossing - Q2 Aster pricing",
+  "body": "Hi Jenna,\n\nPer our call last month, attached is Q2 pricing for the Aster 3 14 replacements (C5 / 16GB / 512GB) plus ProCare Basic. Pricing holds through June 30.\n\nThanks,\nSneha\n\n---\nAutomatic reply: Jenna Cruz is no longer with Juniper Crossing Systems. Please direct procurement inquiries to purchasing@jcssystems.com.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2021-05-18",
+  "kind": "call",
+  "author": "Dustin Burke",
+  "contact": "Lucas Hoffman",
+  "subject": "EUC discovery - Lucas Hoffman",
+  "body": "Call w/ Lucas Hoffman (Dir End User Computing). Owns the laptop fleet.\n\n- ~1,400 laptops, mostly Aster 3 14 G1 bought 2018-2019, plus Cadence micros + Wisp thin clients in the SOC. Everyone on Win10.\n- Analysts + consultants are heavy users - VMs, packet capture, multiple monitors. 16GB is the pain point, want 32GB standard.\n- Security: everything BitLocker, they're a cybersecurity firm so they're strict on drive handling - \"drives never leave our building unless they're shredded.\"\n- Refresh window: they'd like to do the whole fleet at once in FY24, budget permitting. CFO prefers opex.\n\nNext: get Lucas a refresh TCO with Orvane Financial Services options. Sneha is leaving the territory in Aug - whoever picks up the AE seat needs this.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-04-21",
+  "kind": "note",
+  "author": "Nathan Owens",
+  "contact": "Erin Singh",
+  "subject": "Vault DP win",
+  "body": "Won 0065f00004kUucDAAS ($190,822) - Vault DP8900 as Corsalis DataGuard target w/ immutable snapshots, SO-30310752 $203,226, PO JCS-97486. Erin Singh (security eng) ran the eval. Second try - the January version (0065f00004kUvzcAAC, $150,877) died on budget. Ransomware resilience is a big theme for them (they sell it, they need to show they have it).",
+  "opportunity_id": "0065f00004kUucDAAS"
+ },
+ {
+  "date": "2022-11-15",
+  "kind": "meeting",
+  "author": "Sean Nguyen",
+  "contact": "Victoria Ramirez",
+  "subject": "FY24 fleet refresh planning",
+  "body": "Attendees: Victoria Ramirez (CIO), Lucas Hoffman (Dir EUC), Rebecca Tanaka (Procurement Mgr); Sean Nguyen, Dustin Burke, Rachel Wells (services)\n\nGoal: plan the full laptop refresh for spring 2023.\n\nDiscussion:\n- Target spec: Aster 3 G3, C7 / 32GB / 1TB, Win 11 ready. ~1,230 seats in phase 1 (consultants + analysts), rest (exec, SOC desktops) phase 2.\n- Victoria wants it off the balance sheet - OFS. Options walked through: FMV (lowest payment, return at end), $1 buyout (higher payment, own at end), Device-as-a-Service bundle (hardware + ProCare + deployment + end-of-term ITAD in one monthly).\n- Data handling: any return means drives come back to Orvane. Victoria: non-starter unless drives stay on site - Keep Your Drive + on-site sanitization with certificates per serial. OFS says KYD can ride inside the DaaS bundle.\n- Deployment: zero-touch via Autopilot + Orvane Manage, Rachel to scope white-glove for execs.\n- Docks: office-based staff get a Tether dock, bundle into the agreement.\n\nDecision: leaning DaaS bundle, 36 months, phase 1 - Victoria likes one monthly number and a forced refresh cycle.\n\nActions: Sean quote via OFS. Rachel deployment SOW. Lucas pilot 20 units in Jan.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-03-21",
+  "kind": "meeting",
+  "author": "Bryce Gibson",
+  "contact": "Lucas Hoffman",
+  "subject": "Lease structure + final config",
+  "body": "Attendees: Lucas Hoffman, Rebecca Tanaka, Karen Doyle (incoming CIO - Victoria leaving in April); Bryce Gibson (new AE, took over Feb 1), Morgan Sato\n\nRe-did a lot of what Sean covered in Nov - his notes had the decision but not the reasons, Karen wanted to hear it again.\n\nFinal:\n- 1,230x Aster 3 15 G3. Spec cut to C5 / 16GB / 512GB to hit the monthly number - Lucas not happy, consultants wanted 32GB.\n- 504x Tether docks for office-based staff.\n- OFS Device-as-a-Service Bundle, 36 months, starts on ship date (target 4/28). ProCare Plus + Keep Your Drive inside the bundle.\n- Lease schedule will show 1,734 units (laptops + docks are separate line items) - flagged to Rebecca so finance doesn't think it's 1,734 laptops.\n- Imaged with current corporate image (Win10 - Lucas says Win11 image not ready, will upgrade in place later).\n\nKaren asked about end of term: DaaS = return + refresh, extend, or buy out at fair market value. Drives stay with them under KYD either way. She wants that in writing.\n\nPhase 2 (~2,900 seats incl. SOC desktops + remaining staff... Lucas's number, seems high) - separate opp.\n\nNext: Rebecca to issue PO after Karen signs agreement.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-04-28",
+  "kind": "note",
+  "author": "Bryce Gibson",
+  "contact": "Rebecca Tanaka",
+  "subject": "Phase 1 closed won - 1,230 Asters",
+  "body": "Closed won 0065f00004kVqN0AAK ($1,626,943). SO-30310976 $1,757,098, PO JCS-49135. Deployment services booked separately yesterday (SO-30310963, $143,475, PO JCS-94895). OFS DaaS Bundle LSE-301824, 4/28/2023 - 4/28/2026, financed $1,626,943, 1,734 units. Karen Doyle signed (Victoria already gone). Ship in 3 waves through June. Note: Nathan's 4/19 order SO-30310932 has PO \"see email\" - needs a real number.",
+  "opportunity_id": "0065f00004kVqN0AAK"
+ },
+ {
+  "date": "2023-07-05",
+  "kind": "chatter",
+  "author": "Bryce Gibson",
+  "contact": "",
+  "subject": "Phase 2 lost",
+  "body": "phase 2 (0065f00004kVtRdAAK, $2.7M) closed lost - Karen put a cost reduction freeze on, no competitor. Leaving the FY24 Q3/Q4 ones open, Lucas says maybe in the fall. I'm out 7/21, someone please pick these up.",
+  "opportunity_id": "0065f00004kVtRdAAK"
+ },
+ {
+  "date": "2023-09-06",
+  "kind": "call",
+  "author": "Quinn Weber",
+  "contact": "Lucas Hoffman",
+  "subject": "Intro - new AE",
+  "body": "Intro w/ Lucas. I took over mid-Aug (Bryce left in July).\n\nAsked about the lease - Lucas said it's 1,734 devices ending April 2026. I had it as 1,734 laptops in my head from the lease record; Lucas corrected: 1,230 laptops + 504 docks. Also I thought it was a $1 buyout (they own at end) - it's not, it's a DaaS bundle, so return/refresh, extend or FMV buyout at the end. Updating my notes.\n\n- Win11 still not rolled out. ~22% of fleet. In-place upgrade planned \"next year\".\n- Phase 2 still frozen. The $2.6M FY24 Q3 version closed lost 8/30 under Bryce's name; two smaller ones (~$234K and ~$158K) still sitting open - Lucas says nothing is happening this year.\n\nNext: close or push those opps. Quarterly check-in.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-11-20",
+  "kind": "note",
+  "author": "Quinn Weber",
+  "contact": "",
+  "subject": "Closed stale phase 2 opps",
+  "body": "Closed lost 0065f00004kVmBFAA0 ($158,215) - still owned by Bryce, no activity since May. 0065f00004kVjAbAAK ($234,280) went the same way in Sept. Cost freeze through FY25 per Lucas. Real next event is LSE-301824 end of term 4/28/2026.",
+  "opportunity_id": "0065f00004kVmBFAA0"
+ },
+ {
+  "date": "2024-04-10",
+  "kind": "note",
+  "author": "Samuel Perry",
+  "contact": "Lucas Hoffman",
+  "subject": "Account plan - lease end is the play",
+  "body": "Account plan (new AE as of March - 3rd owner in 14 months, Lucas noticed).\n\nKey date: LSE-301824 (OFS DaaS bundle) ends 4/28/2026. 1,230 Aster 3 15 G3 + 504 Tether docks = 1,734 units.\nOptions to prep for customer:\n1. Return + refresh on a new DaaS bundle - old units out via Orvane ITAD, drives stay on site (KYD).\n2. Extend 12 months at a reduced rate.\n3. Buy out at FMV and keep. G3s are Win11-capable but C5 / 16GB - already tight for the consultants.\n\nOther timing: Win10 end of support Oct 2025. Fleet ~42% Win11. Older Aster 3 14 G1 units (~130 left) are NOT Win11 eligible - those need to go regardless.\n\nStakeholders: Karen Doyle (CIO, decides), Lucas Hoffman (EUC, champion), Rebecca Tanaka (procurement), Lindsey Richardson (VP Digital Transformation - owns budget for \"workplace\"), security engineers Krista Romero / Carly Martinez on sanitization standards.\n\nCompetition: Helixon has been in front of Lindsey with a DaaS offer.\n\nStart lease-end conversation no later than Q1 FY26.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-10-10",
+  "kind": "note",
+  "author": "Chad Walker",
+  "contact": "James Turner",
+  "subject": "Data Protection FY25 Q3 closed lost",
+  "body": "Closed lost 0065f00004kXOSGAA4 ($155,341) - Vault expansion; they stretched retention policies on the DP8900s instead of buying. James Turner is the tech lead on DC/backup. Revisit in spring - growth on the backup side hasn't slowed. Samuel has an Aster order in flight for the end of month.",
+  "opportunity_id": "0065f00004kXOSGAA4"
+ },
+ {
+  "date": "2025-03-18",
+  "kind": "meeting",
+  "author": "Samuel Perry",
+  "contact": "Lucas Hoffman",
+  "subject": "Lease-end options workshop",
+  "body": "Attendees: Lucas Hoffman, Rebecca Tanaka, Krista Romero (Security Eng); Samuel Perry, Kelsey Cox, Michael Wood\n\nAgenda: LSE-301824 end-of-term (4/28/2026) - refresh vs extend vs buyout; Win11; ITAD.\n\nState of fleet (Lucas):\n- 1,230 G3s in service minus ~40 lost/stolen/RMA'd (insurance + DaaS casualty claims, Rebecca to reconcile). Battery health reports: ~30% under 80% capacity.\n- Win11 at ~63%. In-place upgrade of G3s ongoing.\n- ~130 Aster 3 14 G1 still around - not Win11 eligible. Must retire before Oct.\n\nOptions discussed:\n1. FMV buyout + keep: Lucas worried about yr 4-5 failure rates and 16GB on consultant machines.\n2. Refresh: return G3s, new Aster on a new DaaS bundle, timed to April 2026. OFS handles return logistics; drives stay here under KYD.\n3. Extension: OFS can extend 12 months at a reduced payment.\n\nSanitization requirements (Krista):\n- NIST 800-88 Purge minimum, crypto-erase on the SED drives, verification + certificate per serial.\n- SOC + incident response laptops (~150): physical shred on-site, drives never leave.\n- Chain of custody docs for audit; customer witness on site.\n\nMichael: Orvane ITAD can do on-site purge + shred, certificate per serial. For returned DaaS units the chassis go back to OFS, drives stay.\n\nNotice: Rebecca thinks OFS needs written notice of intent 90 days before end. Need to confirm.\n\nActions: Kelsey refresh quote (Aster 5 14 + Tether). Michael ITAD quote (G3s + ~130 G1s). Samuel get OFS end-of-term letter + notice requirements.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-06-10",
+  "kind": "email_in",
+  "author": "Samuel Perry",
+  "contact": "Rebecca Tanaka",
+  "subject": "RE: LSE-301824 end of term",
+  "body": "Samuel,\n\nThanks for the OFS letter. To confirm my understanding:\n\n- Notice of intent required 90 days before 4/28/2026, so by 1/28/2026.\n- If we do nothing, does the DaaS agreement just roll month-to-month at the same rate?\n- If we refresh, can the new agreement start before the old one ends so we're not paying both for 3 months?\n\nAlso - our records show 1,734 laptops on this agreement but Lucas says it's 1,230. Can you send the schedule by line item? Finance needs it for the asset register.\n\nRebecca Tanaka\nProcurement Manager, Juniper Crossing Systems\n\n> From: Samuel Perry\n> Attached is the OFS end-of-term letter for LSE-301824 ...",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-07-30",
+  "kind": "note",
+  "author": "Chad Walker",
+  "contact": "Jared Desai",
+  "subject": "Vault DP won",
+  "body": "Won 0065f00004kXL9XAAW ($204,081) - Vault expansion, SO-30311452 $220,408, PO JCS-64819. Both DP8900s (MQFK3XK, 57W2TQN) were already pushing 85%+ - this buys them time. Data center refresh is their FY26 initiative - competing with the laptop lease decision for the same budget.",
+  "opportunity_id": "0065f00004kXL9XAAW"
+ },
+ {
+  "date": "2025-09-08",
+  "kind": "note",
+  "author": "Kelsey Cox",
+  "contact": "Maria Castillo",
+  "subject": "PO mismatch / placeholder POs",
+  "body": "SO-30311466 ($36,279) on PO Amount Mismatch - PO JCS-94128 was issued off the old quote before docks were added. Maria Castillo is reissuing. Same issue on Natalie's July order SO-30311425. SO-30311437 went through with PO \"per John\" - nobody knows who John is. Rebecca's team keeps cutting POs from the first quote version.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-09-22",
+  "kind": "email_out",
+  "author": "Kelsey Cox",
+  "contact": "Kenji Jackson",
+  "subject": "Refresh pilot units - security validation",
+  "body": "Hi Kenji,\n\nChecking in on the 10 Aster 5 14 pilot units your team has had for 3 weeks. Lucas mentioned you'd validate them against your security baseline (Shield attestation, SED crypto-erase, BIOS lockdown) before we finalize the quote. Anything I should know?\n\nThanks,\nKelsey\n\n[Auto-reply: Kenji no longer works at Juniper Crossing Systems. Contact itsupport@jcssystems.com]",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-11-06",
+  "kind": "meeting",
+  "author": "Samuel Perry",
+  "contact": "Karen Doyle",
+  "subject": "Lease-end decision - exec review",
+  "body": "Attendees: Karen Doyle (CIO), Lindsey Richardson (VP Digital Transformation), Lucas Hoffman, Rebecca Tanaka; Samuel Perry, Kelsey Cox, Natalie Wang\n\nFY26 IT budget is down a bit (~$9.7M) and the data center refresh is competing for it.\n\nKaren's direction:\n- Not refreshing all 1,230 at once.\n- Leaning hybrid: return ~500 consultant/analyst G3s and refresh those on a new DaaS bundle; FMV buyout on the healthiest ~700 to keep 12-18 more months.\n- The ~130 G1s + any G3 that fails battery/health check go to ITAD in Q1 regardless.\n- Win11: finish in-place upgrade on kept G3s by March (at ~64% now - behind). Natalie: Orvane Manage can push feature update + report compliance.\n\nLindsey wants Orvane Flex pricing on the 500 to compare to DaaS. Helixon also quoted her a DaaS bundle with ITAD included.\n\nConcerns: Krista's sanitization requirements apply to all retirements - Michael's ITAD quote needs per-serial certificates + on-site shred for SOC units.\n\nNext steps: Kelsey revised quote for ~500 Aster 5 14 (DaaS + Flex), first tranche on 0065f00004kXiBwAAK. Natalie Manage/Win11 compliance proposal. Samuel confirm with OFS that partial return + partial FMV buyout is allowed on one schedule. Notice deadline 1/28.",
+  "opportunity_id": "0065f00004kXiBwAAK"
+ },
+ {
+  "date": "2026-01-15",
+  "kind": "chatter",
+  "author": "Michael Wood",
+  "contact": "",
+  "subject": "JCS ITAD quote",
+  "body": "fyi JCS ITAD quote out to Lucas + Krista: ~350 units (130 G1s + ~220 G3s failing battery/health), on-site NIST 800-88 purge, crypto-erase + verification, shred for SOC units, certificate per serial. Returned DaaS chassis go back to OFS, drives stay under KYD. Krista wants their own witness on every shred day. @Samuel Perry they want this scheduled before 4/28 if possible.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2026-01-26",
+  "kind": "email_out",
+  "author": "Samuel Perry",
+  "contact": "Rebecca Tanaka",
+  "subject": "LSE-301824 - notice of intent due 1/28",
+  "body": "Hi Rebecca,\n\nQuick reminder that the notice of intent for LSE-301824 is due to Orvane Financial Services this Wednesday, 1/28.\n\nBased on Karen's direction in November, the notice would state:\n- Return ~500 Aster 3 15 G3s (+ their docks) at end of term, replaced under a new agreement\n- FMV buyout on the remaining units on the schedule (schedule total: 1,230 Aster 3 15 G3 + 504 Tether docks = 1,734 line items)\n- Drives from returned units stay on site under Keep Your Drive\n\nOFS confirmed in writing that partial return + partial buyout on one schedule is fine. Line-item schedule attached for your asset register.\n\nCan you confirm you'll be sending it, or would you like OFS to send the form for signature?\n\nThanks,\nSamuel Perry\nAccount Executive | Orvane Technologies",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2026-01-29",
+  "kind": "note",
+  "author": "Samuel Perry",
+  "contact": "Karen Doyle",
+  "subject": "Notice received - status",
+  "body": "Notice of intent received by OFS 1/28 (Karen signed) - partial return (~500) + FMV buyout on the rest of LSE-301824. Refresh opp 0065f00004kXiBwAAK ($39,155) is only the first tranche - the full ~500-seat refresh isn't in pipeline yet, Lindsey still comparing DaaS vs Flex vs Helixon. Chad's DP opp (0065f00004kXMq4AAG, $271,673) closed lost 12/22 - budget went to this decision. ITAD for ~350 units targeted March-April. Win11 still ~64% - risk.",
+  "opportunity_id": "0065f00004kXiBwAAK"
+ }
+]

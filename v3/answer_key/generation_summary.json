@@ -1,0 +1,192 @@
+{
+  "accounts": 10000,
+  "partners": 5,
+  "products": 500,
+  "employees_in_org": 2431,
+  "segment_true_FY26": {
+    "Select": 100,
+    "Large Enterprise": 3104,
+    "Medium Business": 4347,
+    "Small Business": 2449
+  },
+  "segment_recorded_FY26": {
+    "Select": 149,
+    "Large Enterprise": 3063,
+    "Medium Business": 4298,
+    "Small Business": 2490
+  },
+  "status_true_at_snapshot": {
+    "Retention": 5803,
+    "Development": 2395,
+    "Acquisition": 1802
+  },
+  "never_purchased": 1095,
+  "canada_accounts": 426,
+  "accounts_changed_segment": 1547,
+  "owners_per_account_5yr": {
+    "2": 933,
+    "3": 2555,
+    "4": 3177,
+    "5": 2068,
+    "6": 986,
+    "7": 260,
+    "8": 20,
+    "9": 1
+  },
+  "avg_people_touching_account": 21.2,
+  "max_people_touching_account": 54,
+  "revenue_usd_millions_by_FY": {
+    "22": 13729.4,
+    "23": 13797.9,
+    "24": 13782.4,
+    "25": 17786.7,
+    "26": 19664.8
+  },
+  "families": 450,
+  "subsidiaries": 2033,
+  "unlinked_subsidiaries": 460,
+  "showcase": {
+    "select_family_misrouting": {
+      "account_id": "0015f00004TTh8VAAT",
+      "name": "Magnolia Mesa Products Holdings"
+    },
+    "storage_capacity_crunch": {
+      "account_id": "0015f00004TWGVZAA5",
+      "name": "Meadow Trail Public Works"
+    },
+    "champion_left_mid_deal": {
+      "account_id": "0015f00004TWjCKAA1",
+      "name": "Luxium Precision Corporation"
+    },
+    "headcount_jump_flat_pc_spend": {
+      "account_id": "0015f00004TYN6yAAH",
+      "name": "CPM Precision Co."
+    },
+    "missed_po_credit_hold": {
+      "account_id": "0015f00004TYdWgAAL",
+      "name": "Zenara Co."
+    },
+    "rep_carousel_partner_conflict": {
+      "account_id": "0015f00004Tbf4xAAB",
+      "name": "Lake Valley Engineering Inc"
+    },
+    "security_advisory_exposure": {
+      "account_id": "0015f00004TXOLpAAP",
+      "name": "Falcon College"
+    },
+    "ai_reacquisition": {
+      "account_id": "0015f00004TaVL6AAN",
+      "name": "Peterson & Kennedy Utilities Group, Inc."
+    },
+    "consumer_to_mb_journey": {
+      "account_id": "0015f00004TbCWbAAN",
+      "name": "Meadow Port Products L.P."
+    },
+    "lease_end_refresh": {
+      "account_id": "0015f00004Tcu17AAB",
+      "name": "Juniper Crossing Systems Inc."
+    }
+  },
+  "row_counts": {
+    "Account": 10562,
+    "AccountHistory": 42711,
+    "AccountTeamMember": 212095,
+    "Account_Partner__c": 2836,
+    "Account_Firmographics__c": 58983,
+    "Account_Segment_History__c": 50000,
+    "Account_Environment__c": 50000,
+    "Contact": 222008,
+    "ContactHistory": 3208,
+    "Lead": 14154,
+    "User": 2431,
+    "User_Role_History__c": 2592,
+    "Opportunity": 1303952,
+    "OpportunityHistory": 7081380,
+    "OpportunityLineItem": 4317406,
+    "OpportunityTeamMember": 3815905,
+    "OpportunitySplit": 2115728,
+    "Quote": 2755162,
+    "QuoteLineItem": 3407562,
+    "Deal_Registration__c": 80274,
+    "Discount_Approval__c": 387645,
+    "Forecast_Submission__c": 235261,
+    "Quota__c": 18097,
+    "Task": 2466249,
+    "Event": 391847,
+    "Note": 62583,
+    "FeedItem": 143036,
+    "Case": 492872,
+    "CaseComment": 951932,
+    "Survey_Response__c": 147609,
+    "Campaign": 71,
+    "CampaignMember": 44064,
+    "Web_Intent_Signal__c": 192007,
+    "News_Item__c": 11356,
+    "ERP_Customer": 10359,
+    "ERP_Ship_To": 47632,
+    "CRM_ERP_Crosswalk": 8353,
+    "Sales_Order": 934384,
+    "Sales_Order_Line": 2946613,
+    "Shipment": 902304,
+    "Invoice": 1731746,
+    "Payment": 1760228,
+    "Credit_Memo": 29082,
+    "RMA": 21944,
+    "Credit_Hold_Event": 53795,
+    "Contract_Pricing_Agreement": 2600,
+    "Lease_Contract": 30085,
+    "Flex_Usage_Monthly": 27106,
+    "Legacy_Order_Summary": 198881,
+    "Consumer_Order": 12303,
+    "Asset": 3483075,
+    "ServiceContract": 3368731,
+    "Asset_Telemetry_Monthly__c": 1603955,
+    "Security_Advisory__c": 10,
+    "Advisory_Exposure__c": 2529181,
+    "Product2": 500,
+    "Price_History": 2009,
+    "orvane_unified_timeline": 12482770
+  },
+  "planted_issues": {
+    "order_not_linked_to_opportunity": 58512,
+    "discount_without_approval": 57651,
+    "split_over_allocated": 23893,
+    "missing_po": 14897,
+    "po_amount_mismatch": 29917,
+    "po_placeholder_value": 26114,
+    "unapplied_cash": 35120,
+    "consumer_purchase_unlinked": 9739,
+    "employee_count_stale": 3503,
+    "contact_left_company_still_active": 33907,
+    "duplicate_contact": 6784,
+    "same_person_new_company": 11533,
+    "zero_amount_won_opportunity": 1325,
+    "last_purchase_rollup_wrong": 1283,
+    "contact_title_outdated": 3314,
+    "crosswalk_missing": 990,
+    "stale_open_opportunity": 1010,
+    "account_name_formatting": 775,
+    "crosswalk_wrong_mapping": 263,
+    "tax_cert_expired": 18123,
+    "stale_ship_to_address": 6148,
+    "coverage_status_stale": 1963,
+    "duplicate_account": 445,
+    "channel_conflict_duplicate_registration": 4514,
+    "partner_order_missing_end_user": 22538,
+    "segment_outdated": 308,
+    "lead_duplicates_existing_contact": 4916,
+    "customer_since_reset_by_migration": 445,
+    "legacy_region_value": 781,
+    "duplicate_erp_customer": 379,
+    "won_opportunity_without_order": 173,
+    "account_name_outdated": 130,
+    "acquired_company_not_reparented": 95,
+    "owner_inactive_user": 75,
+    "owner_holding_queue": 80,
+    "contract_pricing_not_applied": 36237,
+    "subsidiary_not_linked_to_parent": 460,
+    "wrong_parent_account": 50,
+    "boomerang_duplicate_user": 3
+  },
+  "runtime_sec": 1947
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "date": "2021-05-12",
+  "kind": "note",
+  "author": "Jamie Kim",
+  "contact": "Jordan Brown",
+  "subject": "Aster 7 x66 won - engineering/GIS",
+  "body": "Closed won 0065f00004hxXJnAAM - 66x Aster 7 16 (C7 / 64GB / 2TB) for engineering + GIS analysts ($184,326). SO-30260951 $193,451 via Premier portal, hit Credit Limit Exceeded, released after AP sent financials. Jordan Brown ran the RFQ. Big Aster fleet refresh is the next play (~700 Aster 3 14 G1s getting old) - 0065f00004hxXfQAAU, Jordan says a fall decision.",
+  "opportunity_id": "0065f00004hxXJnAAM"
+ },
+ {
+  "date": "2021-05-24",
+  "kind": "note",
+  "author": "Christopher Romero",
+  "contact": "Cameron Cox",
+  "subject": "Server discovery - control center cluster",
+  "body": "Discovery w/ Cameron. SCADA historian, GIS and outage mgmt run on a vSphere 6.7 cluster in the control center DC - hosts are 5+ years old, two had DIMM failures this spring. Booked SO-30260983 ($152,144, credit hold released) for interim host adds to keep it alive. Full refresh is in the FY23 plan, opened 0065f00004hxfIQAAY. vSphere 6.7 - they know it's aging, no budget for the licensing upgrade. Handing server coverage to whoever backfills me in July.",
+  "opportunity_id": "0065f00004hxfIQAAY"
+ },
+ {
+  "date": "2022-10-06",
+  "kind": "note",
+  "author": "Darren Russell",
+  "contact": "Cameron Cox",
+  "subject": "Outpost x21 closed won - substations",
+  "body": "Won 0065f00004hyLceAAE - 21x Outpost edge nodes for substations + the historian collection tier ($399,630). SO-30261188 $417,414, credit limit hold, released. Rides on Hao's Mesh x22 from June (0065f00004hy8RUAAY). The core cluster refresh (0065f00004hxfIQAAY) lost in March to budget - historian/GIS/OMS still on the old vSphere 6.7 hosts. Cameron wants to standardize on one vendor - good for us.",
+  "opportunity_id": "0065f00004hyLceAAE"
+ },
+ {
+  "date": "2023-03-20",
+  "kind": "note",
+  "author": "Min-jun Cook",
+  "contact": "Cameron Cox",
+  "subject": "Storage opp closed lost",
+  "body": "Closed lost 0065f00004hyRsSAAU ($153,740) - Strata expansion, still owned by Ashley Fisher who left in Nov. Cameron says nothing was re-proposed after she left and the ERP migration ate the budget. No competitor. Lindsey picking up storage. Emily's server add order (SO-30261294) went through last week at least.",
+  "opportunity_id": "0065f00004hyRsSAAU"
+ },
+ {
+  "date": "2023-05-01",
+  "kind": "note",
+  "author": "Brooke Kim",
+  "contact": "Cameron Cox",
+  "subject": "Vault booked - account record is wrong",
+  "body": "Booked SO-30261331 ($115,025) - Vault DP5900 as backup target for the control center. Credit limit hold, released. No opp - smaller scope than the June '22 opp we lost (0065f00004hyCZsAAM - that opp name is still ALL CAPS from the web lead, never fixed). Cameron's driver: ransomware resilience, insurer asking. Our account record says \"Backup: none documented\" - not true anymore.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-10-30",
+  "kind": "call",
+  "author": "Kendra Hamilton",
+  "contact": "Cameron Cox",
+  "subject": "Intro call / DP expansion",
+  "body": "Intro call w/ Cameron. Picked up DP coverage (seat was vacant Jun-Aug). Installed: the Vault DP5900 from April (SO-30261331). Building a bigger proposal - 3rd site + long-term retention, 0065f00004hzXHyAAM. Ethan closed the Aster 5 x107 last week (0065f00004hzDxBAAU, SO-30261435 via Premier). Account record still says backup \"none documented\".",
+  "opportunity_id": "0065f00004hzXHyAAM"
+ },
+ {
+  "date": "2024-07-29",
+  "kind": "note",
+  "author": "Carly Vaughn",
+  "contact": "James Parker",
+  "subject": "No activity since March / cost freeze",
+  "body": "Nothing booked since 3/25 (SO-30261541, $76,103 via Premier). Last real deal was Kendra's Vault DP in March (0065f00004hzUMOAA2, $208,838; SO-30261527) - the scaled-down version of the $324K one that lost in Jan. Not a competitive problem - James Parker (CFO) froze discretionary capex for FY25 under the cost reduction program, extending device life to 5 yrs. No open opps. vSphere 6.7 still - VMware licensing change is going to be a forcing function, Emily is tracking.",
+  "opportunity_id": "0065f00004hzUMOAA2"
+ },
+ {
+  "date": "2025-01-22",
+  "kind": "chatter",
+  "author": "Carly Vaughn",
+  "contact": "",
+  "subject": "P&K moving to inside coverage",
+  "body": "fyi P&K drops to Medium Business for FY26 (their headcount dipped + rev band), so whole field team rolls off 2/1 and it goes to the inside team. Nothing open. Watch: vSphere 6.7 EOL, Vault + Strata filling (Strata 300 PTC0WPG worst), Marcus Russo (VP Eng) was asking about GPUs at the Nov user group - didn't log it, should have. Account plan in Carly's files, will send to new AE.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-03-11",
+  "kind": "call",
+  "author": "Priya Brennan",
+  "contact": "Cameron Cox",
+  "subject": "Intro - new account manager",
+  "body": "Intro call w/ Cameron Cox (Dir IT). I'm the new AE as of Feb. Didn't get Carly's account plan yet.\n\n- No hardware buys planned this FY - cost reduction program still on. Device life extended to 5 yrs.\n- vSphere 6.7 cluster on aging hosts, plus the Outpost edge tier at substations. VMware renewal quote under the new licensing was \"3x\" - they're evaluating options, Converge HCI is on the list but so is just moving more to AWS.\n- AWS footprint growing (ERP went SaaS).\n- Asked about AI/GPU - Cameron: \"Marcus is playing with something in the cloud, not IT's project.\"\n\nNext: Danielle to send Converge HCI vs vSphere renewal comparison. Get intro to Marcus Russo.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-06-17",
+  "kind": "email_out",
+  "author": "Danielle Pelletier",
+  "contact": "Cameron Cox",
+  "subject": "vSphere 6.7 / Converge HCI comparison",
+  "body": "Hi Cameron,\n\nAs promised on the call with Priya, attached is a side-by-side for the control center cluster:\n\n- Option A: renew VMware under the new per-core subscription on your existing control center hosts - 3yr subscription only, no hardware.\n- Option B: 4-node Converge HCI with built-in hypervisor, migrate the historian/GIS/OMS VMs, reuse the 2021 host adds as a Vault proxy + test cluster.\n\nB is higher year-1, lower over 3 years based on the core counts you sent. Happy to walk through it. Also - your Strata 500 (XNQ89YH) is at ~63% per telemetry and growing ~5.5TB/mo, worth including in the plan.\n\nThanks,\nDanielle Pelletier\nInside Infrastructure Specialist | Orvane Technologies",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-08-05",
+  "kind": "email_out",
+  "author": "Priya Brennan",
+  "contact": "James Parker",
+  "subject": "Following up - FY26 planning",
+  "body": "Hi James,\n\nFollowing up on my note from June - I'd love 20 minutes to understand how the cost reduction program is shaping FY26 infrastructure spend, particularly around the VMware renewal.\n\nBest,\nPriya\n\n---\nMail Delivery Subsystem: Delivery to the following recipient failed permanently: james.parker@petersonkennedyutilities.com",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-09-16",
+  "kind": "chatter",
+  "author": "Alex Clark",
+  "contact": "",
+  "subject": "P&K intent spike",
+  "body": "@Priya Brennan intent data on P&K lit up the last 3 weeks - topics \"AI server\", \"GPU server 8x\", \"Atlas AI\", \"on-prem vs cloud GPU cost\", \"inference server power\". 40+ sessions on the Atlas AI configurator from their IP range. Something's happening. CRM still says Retention but no buys since Mar 2024.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-10-08",
+  "kind": "call",
+  "author": "Priya Brennan",
+  "contact": "Marcus Russo",
+  "subject": "AI pilot discovery - Marcus Russo",
+  "body": "Finally got Marcus Russo (VP Eng). He owns the AI pilot, IT (Cameron/Quinn) supports.\n\nPilot (since ~May):\n1. Computer vision on drone + helicopter inspection imagery of transmission lines - detect damaged insulators, vegetation encroachment. ~1.1PB of imagery archived in cloud object storage, ~40TB/mo new during inspection season.\n2. LLM over 15 years of maintenance work orders + outage reports for crews (\"what failed last time on this feeder\").\n\nRunning on public cloud GPU instances. Cloud bill for the pilot ~$40-45K/month and climbing. Marcus wants to go to production by summer storm season; his estimate is 3x the pilot compute.\n\nConcerns pushing them on-prem: egress costs on the imagery, CIP compliance reviewers uncomfortable with grid asset data in public cloud, GPU instance availability (got capacity errors twice).\n\nCompetition: Lumora has already pitched GPU servers to Cameron. Cloud provider offering a committed-use discount.\n\nNext: get Danielle/infra on a sizing call. New CFO is Owen Medina (joined in Aug - James Parker left in July, explains the bounce).",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-10-14",
+  "kind": "chatter",
+  "author": "Danielle Pelletier",
+  "contact": "",
+  "subject": "Leaving - P&K handoff",
+  "body": "heads up I'm out 10/17, infra seat on P&K will be vacant till backfill. Marcus's AI sizing call was set for 10/22 - needs a new owner. Client specialist seat (Dustin) already vacant since 10/2. Notes on the vSphere/Converge comparison are in my email to Vikram 6/17.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-11-12",
+  "kind": "note",
+  "author": "Priya Brennan",
+  "contact": "Marcus Russo",
+  "subject": "Opened Atlas AI opp - $640K",
+  "body": "Opened 0065f00004hzaD9AAI Servers & HCI FY27 Q1, $640,000, close 4/24/26 (before Marcus's board review). Placeholder sizing pending infra specialist (vacant until 11/22):\n- 2x Atlas AI 8-GPU nodes (80GB+ HBM GPUs) - training/fine-tune + inference\n- Strata NVMe tier for hot imagery working set (~250TB usable)\n- 2x Mesh 100GbE switches for GPU/storage fabric\n- ProCare Mission Critical + deployment services\nDecision: Marcus (tech), John Allen (CIO), Owen Medina (CFO - new, wants TCO vs cloud). Jordan Brown (infra mgr) ran past RFQs - formal RFP likely. Note: account coverage status still Retention in CRM, should be Development.",
+  "opportunity_id": "0065f00004hzaD9AAI"
+ },
+ {
+  "date": "2025-12-03",
+  "kind": "meeting",
+  "author": "Tamara Reynolds",
+  "contact": "Marcus Russo",
+  "subject": "Atlas AI technical discovery",
+  "body": "Attendees: Marcus Russo (VP Eng), Cameron Cox (Dir IT), Mitchell Ward (Dir Network Eng), Vikram Friedman (Infra Mgr), Quinn Reynolds (Dir IT); Tamara Reynolds (Infra specialist, started 11/22), Priya Brennan, Devin Campbell\n\nWorkloads:\n- CV training on inspection imagery: retrain monthly, ~6 days per run on 32 cloud GPUs today. Model + batch needs >=80GB GPU memory.\n- LLM: fine-tuned mid-size open model (~70B) for work-order Q&A, ~300 internal users, latency target <3s.\n\nFacilities / power:\n- Control center DC racks are 5kW feeds. Atlas AI 8-GPU node ~10kW peak each. Need 2 racks re-fed (2x 30A 3-phase each) + rear-door cooling or put in backup DC which has 12kW racks.\n- Generator capacity OK per facilities. Cameron leaning backup DC too.\n\nNetwork: Mitchell wants a separate 100GbE fabric, not on the core. He used Mesh at his last company (Lake Valley Engineering) - positive. VLANs for GPU mgmt/BMC on OOB network.\n\nStorage: Strata 500 (XNQ89YH) 79% full, +5.5TB/mo; Strata 300s PTC0WPG 90% and SZ8X9MR 66%. None has an NVMe tier. Vault DP5900 F2665BL at ~80% - separate problem, flagged. Imagery would stay in cloud object storage cold, hot set (~250TB) on-prem.\n\nHypervisor: AI nodes bare metal + Kubernetes, NOT on vSphere 6.7.\n\nSecurity: 78 advisories still open on existing gear (114 remediated, 9 risk accepted) - Cameron wants new BMCs on the OOB network from day one.\n\nCompetitive: Lumora quoted 2 GPU servers last month - Marcus says cheaper but no storage/network story.\n\nActions:\n- Tamara: sizing + power draft by 12/17.\n- Devin: ProCare + deployment + data center services scope.\n- Priya: TCO model vs cloud for Owen Medina. Offer Atlas AI POC/loaner.",
+  "opportunity_id": "0065f00004hzaD9AAI"
+ },
+ {
+  "date": "2025-12-15",
+  "kind": "email_in",
+  "author": "Priya Brennan",
+  "contact": "Owen Medina",
+  "subject": "AI infrastructure - what I need to see",
+  "body": "Priya,\n\nMarcus brought me up to speed. Before this goes anywhere near the board I need:\n\n1. 3-year TCO: on-prem vs. staying in cloud with the committed-use discount we've been offered. Include power, cooling, the rack work, staff time. Don't hide the facilities cost.\n2. Financing options - we're in a cost reduction program, a $640K capex line won't fly as-is. Does Orvane Financial Services do consumption/Flex on this kind of gear?\n3. What happens to the hardware if the pilot doesn't go to production.\n\nI'd like this by Jan 16.\n\nOwen Medina\nCFO, Peterson & Kennedy Utilities Group",
+  "opportunity_id": "0065f00004hzaD9AAI"
+ },
+ {
+  "date": "2026-01-09",
+  "kind": "note",
+  "author": "Devin Campbell",
+  "contact": "",
+  "subject": "CRM cleanup + services scope",
+  "body": "Account data issues found while building the services quote:\n- Coverage Status = Retention. Last purchase actually 3/25/2024 (SO-30261541), nothing in 21 months -> should be Development. Ticket with sales ops.\n- Titles stale: Marcus Russo has no title in CRM, James Parker's record lost its title when it was marked Left. Owen Medina is CFO. Marketing also created a new lead for Marcus from the AI webinar - duplicate of the existing contact.\n- Several 2023-24 orders aren't linked to any opp (e.g. SO-30261444, SO-30261484).\nServices scope sent to Priya: Atlas AI deployment + rack/stack, ProCare Mission Critical 4hr, cluster validation, 40hr residency.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2026-01-22",
+  "kind": "email_out",
+  "author": "Tamara Reynolds",
+  "contact": "Vikram Friedman",
+  "subject": "Atlas AI sizing v2 + POC option",
+  "body": "Hi Vikram,\n\nUpdated sizing attached (v2) after Mitchell's network comments:\n\n- 2x Atlas AI, 8 GPUs each (80GB), dual-socket, 2TB RAM, 8x 200GbE\n- Strata NVMe tier, ~250TB usable, placed next to the GPU racks\n- 2x Mesh 100/200GbE leaf, OOB mgmt on separate VLAN\n- Power: ~20kW total at peak for compute - fits 2 racks in the backup DC at 12kW each\n\nWe can also ship a single Atlas AI node as a 60-day POC so Marcus can run one CV training cycle side by side with the cloud run. That should give Owen a real cost-per-training-run number for the TCO.\n\nLet me know if Feb 9 works for a design review.\n\nThanks,\nTamara Reynolds\nInside Infrastructure Specialist | Orvane Technologies",
+  "opportunity_id": "0065f00004hzaD9AAI"
+ },
+ {
+  "date": "2026-01-28",
+  "kind": "chatter",
+  "author": "Priya Brennan",
+  "contact": "",
+  "subject": "P&K status",
+  "body": "Status: opp still says Prospecting in CRM - need to update. TCO went to Owen 1/16. He wants Orvane Flex pricing vs cloud committed-use - cloud provider came back with a 3yr commit at ~35% off. Lumora still in with GPU-only bid. POC node approved by Marcus, shipping 2/10 if we get the loaner signed. Board review mid-April. @Devin Campbell need services pricing final by 2/6.",
+  "opportunity_id": "0065f00004hzaD9AAI"
+ }
+]

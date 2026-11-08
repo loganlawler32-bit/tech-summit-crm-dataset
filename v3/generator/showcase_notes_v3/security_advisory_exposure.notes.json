@@ -1,0 +1,182 @@
+[
+ {
+  "date": "2021-04-07",
+  "kind": "meeting",
+  "author": "Owen Kruger",
+  "contact": "Kendra Richardson",
+  "subject": "Falcon DC ops review - Atlas fleet",
+  "body": "Attendees: Kendra Richardson (Dir DC Ops), John Roberts (CTO), Vikram Perry (storage admin); Owen Kruger, Vikram Allen (SA)\n\nEnvironment:\n- Two data centers: main campus (Building C, 14 racks) + West campus (6 racks). Hyper-V clusters, ~180 Atlas nodes all-in incl. the research compute rows. Azure + AWS for some SaaS and the LMS.\n- Avg 6.5kW/rack at main campus, facilities (Carlos White) says they're capped at 8kW without new PDUs.\n- BMCs all on mgmt VLAN 10 - flat, shared with switch mgmt and the UPS cards. Reachable from the IT admin VLAN, not from student nets (per Kendra).\n- Firmware: updated only when a node is reimaged. No central tooling - they don't use Orvane Manage, just log into each BMC. Kendra estimates \"4 or 5\" BMC versions in the fleet.\n- Backup: Corsalis DataGuard, Vault DP2400s as target.\n\nUpcoming: big Atlas refresh for the VDI expansion next FY (~140 nodes), M&A integration of the nursing college campus.\n\nActions:\n- Vikram A. to send Orvane Manage overview + firmware baseline proposal.\n- Owen to start sizing for VDI refresh. John Roberts is the exec sponsor for VDI.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2021-11-15",
+  "kind": "email_out",
+  "author": "Melissa Foster",
+  "contact": "Kendra Richardson",
+  "subject": "Falcon College - Q3 TAM review + firmware drift",
+  "body": "Hi Kendra,\n\nAttached is the Q3 TAM report. Two things I want to flag:\n\n1. Firmware drift - from the support collections we have on file, your Atlas nodes are on 5 different BMC builds (2.04 through 2.11) and 4 BIOS levels. Nothing critical open right now, but it makes troubleshooting slow and it will be a problem the next time an advisory drops.\n2. Support case volume - 9 of the 14 cases this quarter were resolved by a firmware update.\n\nI'd like to propose a baseline: BMC 2.11 / current BIOS across the fleet, pushed via Orvane Manage (included in your ProCare entitlement). Happy to walk your team through it.\n\nAlso - John Roberts is still listed as your CTO on our side, is there someone new I should be including?\n\nThanks,\nMelissa Foster\nTechnical Account Manager, Orvane ProCare",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-09-09",
+  "kind": "note",
+  "author": "Owen Kruger",
+  "contact": "Purchasing Team",
+  "subject": "VDI refresh - Atlas nodes booked",
+  "body": "SO-30112042 booked $435,180, PO 202259598 - went on Credit Limit Exceeded hold, credit released it two days later. (January's order SO-30111875 had a PO Amount Mismatch - purchasing keeps cutting POs off pre-freight numbers.) ~140 Atlas nodes for the VDI expansion + nursing campus. Sophie Patel pitched OFS FMV but they paid from capital funds this time. Factory BMC will be 2.11. Kendra agreed to stand up Orvane Manage for these, but her team is short 2 people so not holding my breath.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-09-12",
+  "kind": "call",
+  "author": "Whitney Chavez",
+  "contact": "Bianca Becker",
+  "subject": "Patch windows / change process",
+  "body": "Call w/ Bianca Becker (co-Director DC Ops w/ Kendra, owns change mgmt). Asked why firmware baseline never happened.\n\n- Change board treats any BMC flash as host-impacting, so it gets bundled with BIOS updates which DO need a reboot. That means it waits for a maintenance window.\n- Only real windows: winter break (late Dec-mid Jan) and mid-May intersession. Summer is out - summer session + the research groups run jobs.\n- Each window is maybe 3 nights of work for 2 people. They prioritize Hyper-V host patching + storage.\n- Orvane Manage: installed, never pointed at the BMCs. Mgmt VLAN can't reach the repo server.\n\nTold her BMC updates can be done independent of host reboot on Atlas G2+. She wants it in writing from engineering before she'll change the policy. Opened request.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-03-14",
+  "kind": "meeting",
+  "author": "Monica Hoffman",
+  "contact": "Kendra Richardson",
+  "subject": "New Orvane team intro / account re-baseline",
+  "body": "Attendees: Kendra Richardson, Yuki Evans (Dir IT); Monica Hoffman (TAM), Emily Edwards (Server Specialist), Min-jun Cook (AE)\n\nWhole Orvane team turned over Feb 1, so this was mostly re-intros. Kendra wasn't thrilled - \"I explained the firmware situation to Whitney twice.\"\n\nKey points:\n- ~300 Atlas nodes now (Kendra's number), incl. the ~140 VDI nodes from the September order.\n- No firmware baseline exists. Engineering letter that BMC flash on G2+ doesn't need host reboot - Kendra never received it. I can't find it either.\n- Hyper-V staying for now; Joshua Campbell (VP EA) floated moving to Converge HCI over next 2-3 yrs.\n- Edge/IoT rollout + network modernization are the FY23 initiatives - Hao to follow up on Mesh for the mgmt network.\n\nActions: Monica re-request the engineering letter. Emily to run a fleet firmware report from support collections.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-11-08",
+  "kind": "chatter",
+  "author": "Megan Martin",
+  "contact": "",
+  "subject": "Falcon BMC firmware",
+  "body": "fyi picked up Falcon as SA. Ran the support-collection report Emily asked for in March - 211 of the Atlas nodes still on BMC 2.04-2.11. Nobody has a mgmt-network diagram. @Monica Hoffman did the eng letter ever land?",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-03-12",
+  "kind": "note",
+  "author": "Brooke Adeyemi",
+  "contact": "",
+  "subject": "OSA-2024-017 - Falcon exposure",
+  "body": "Orvane Security Advisory OSA-2024-017 published 3/11 - critical (CVSS 9.8). BMC web interface auth bypass, unauthenticated remote attacker on the mgmt network can get admin on the BMC. Affects Atlas G1-G3 BMC below 2.19.4. Fix = BMC 2.19.4; nodes on 2.0x need an intermediate step to 2.15 first.\n\nFalcon per Insight: ~240 affected nodes. Basically the whole fleet except a handful reimaged last summer. Mgmt VLAN is reachable from the IT admin VLAN, which has ~60 staff workstations on it. Notifying Kendra today, calling Cameron Morin's office tomorrow.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-03-13",
+  "kind": "email_out",
+  "author": "Brooke Adeyemi",
+  "contact": "Kendra Richardson",
+  "subject": "ACTION REQUIRED: OSA-2024-017 critical BMC advisory - Falcon College",
+  "body": "Hi Kendra,\n\nI'm your new TAM as of February - sorry the first real email is this one.\n\nOrvane published OSA-2024-017 on March 11 (critical, CVSS 9.8) affecting the BMC on Atlas G1-G3 servers below firmware 2.19.4. Based on Orvane Insight data, roughly 240 of your Atlas nodes are affected. Serial list attached.\n\nRecommended:\n1. Restrict access to the BMC/mgmt VLAN to a jump host only (can be done today, no downtime).\n2. Update BMC to 2.19.4. Nodes on 2.04-2.08 need 2.15 first. BMC updates on G2/G3 do not reboot the host OS.\n3. Change default BMC accounts if any remain.\n\nI can get our engineers on a call this week and we can script the updates through Orvane Manage.\n\nThanks,\nBrooke Adeyemi\nTechnical Account Manager | Orvane ProCare",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-03-21",
+  "kind": "email_in",
+  "author": "Brooke Adeyemi",
+  "contact": "Kendra Richardson",
+  "subject": "RE: ACTION REQUIRED: OSA-2024-017 critical BMC advisory - Falcon College",
+  "body": "Brooke,\n\nThanks. We've looked at it. A few things:\n\n- The mgmt VLAN isn't reachable from student or guest networks, so our security office considers this medium, not critical.\n- We can't do 240 nodes before May intersession. Change board won't approve during the term.\n- We have 11 nodes in the research enclave that are getting decommissioned - Cameron's team will risk-accept those.\n- Bianca says the last time we were told BMC updates don't reboot hosts, a node rebooted. So no.\n\nWe'll target what we can in May. Please send whatever scripting you have for Orvane Manage.\n\nKendra\n\n> On Mar 13, Brooke Adeyemi wrote:\n> Orvane published OSA-2024-017 on March 11 (critical, CVSS 9.8) affecting the BMC ...",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-06-05",
+  "kind": "chatter",
+  "author": "Emily Edwards",
+  "contact": "",
+  "subject": "Falcon - pilot cluster on old BMC",
+  "body": "heads up the Atlas nodes from Feb (SO-30112390, $178,619, PO 202470069) shipped with BMC 2.19.4 but the extra Converge pilot nodes Kendra re-used from the 2022 batch are still on 2.11. So the pilot cluster itself is exposed. Nathan told Carly no new servers until it's fixed - 0065f00004Zjw9BAAR ($239,193) will probably close lost this month. Kendra says winter break is the plan for the BMCs.",
+  "opportunity_id": "0065f00004Zjw9BAAR"
+ },
+ {
+  "date": "2024-06-18",
+  "kind": "meeting",
+  "author": "Carly Vaughn",
+  "contact": "Nathan Hill",
+  "subject": "Falcon exec account review",
+  "body": "Attendees: Nathan Hill (CIO), Cameron Morin (VP IT), Joshua Campbell (VP EA); Carly Vaughn, Megan Martin, Hao Stewart, Brooke Adeyemi\n\nAgenda: FY25 priorities, Converge HCI path, OSA-2024-017 status.\n\nDiscussion:\n- FY25 priorities: ransomware resilience, VMware exit for the nursing campus (acquired, came with a small vSphere cluster) and storage consolidation. Converge HCI pilot planned for Q3.\n- OSA-2024-017: May window got through 46 nodes. Brooke: ~195 still exposed. Nathan hadn't seen the March email - Kendra's team kept it inside DC ops. He asked for a monthly status.\n- Hao proposed Mesh switches for a dedicated OOB mgmt network (separate from switch mgmt + UPS), ACL'd to two jump hosts. Cameron liked it - fits zero-trust work.\n- Nathan's view: they're understaffed, not unwilling. Asked whether Orvane can do the remediation as a service.\n\nDecisions: Converge pilot proceeds on existing nodes. New-node opp 0065f00004Zjw9BAAR is at risk - Nathan won't add servers until patching is under control. Tyler to scope remediation services. 11 research enclave nodes formally risk-accepted (Cameron signed).\n\nActions: Brooke monthly exposure report to Nathan + Kendra. Hao Mesh OOB design. Carly pricing for services by July.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-09-10",
+  "kind": "email_out",
+  "author": "Carly Vaughn",
+  "contact": "Jared Fisher",
+  "subject": "GPU servers for the AI lab",
+  "body": "Hi Jared,\n\nFollowing up on the Atlas AI conversation from the summer - I have the configs ready for the 2-node pilot for your data science lab. Before we quote, can you confirm the rack location? West campus is power-limited and Kendra's team will want the new nodes on the new mgmt network, not VLAN 10.\n\nThanks,\nCarly\n\n[Delivery status: 550 5.1.1 recipient address rejected - jared.fisher@falconcollege.com]",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-01-21",
+  "kind": "note",
+  "author": "Brooke Adeyemi",
+  "contact": "Bianca Becker",
+  "subject": "Winter break window results",
+  "body": "Talked to Bianca. Winter window: only 31 nodes updated (planned 120).\n- Orvane Manage repo still can't reach mgmt VLAN, they staged firmware on a USB and did it from the BMC web UI node by node.\n- 2.04 nodes needed the 2.15 intermediate - doubled the time.\n- 2 nodes failed the flash, needed RMA of the BMC module (cases 08841192, 08841207).\nExposure ~165 nodes on OSA-2024-017, 11 risk accepted. Bianca says the Mesh OOB network is \"approved but not funded\".",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-05-20",
+  "kind": "email_out",
+  "author": "Gavin Sato",
+  "contact": "Brett Romano",
+  "subject": "ProCare renewal + remediation services quote",
+  "body": "Hi Brett,\n\nI've taken over as the inside account exec for Falcon College. Attached is the ProCare Plus renewal for the 2022 Atlas nodes along with Tyler's quote for the BMC remediation service (Orvane-delivered firmware updates, 60 nodes per weekend). Can you let me know who on the purchasing side should review?\n\nThanks,\nGavin\n\n---\nAuto-reply: Brett Romano is no longer with Falcon College. For purchasing inquiries please email purchasing@falconcollege.com.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-08-19",
+  "kind": "note",
+  "author": "Brooke Adeyemi",
+  "contact": "",
+  "subject": "OSA-2025-077 - second critical BMC advisory",
+  "body": "OSA-2025-077 published 8/18 - critical. Redfish API privilege escalation -> remote code execution on the BMC; affects Atlas BMC 2.x branch entirely. Fix is BMC 3.02.1, which requires 2.19.4 as a stepping stone.\n\nFalcon impact: every node that never got to 2.19.4 is now exposed to both advisories, and the ones they did patch need another update. Insight shows 363 open findings (nodes x advisory, so not 363 servers - closer to ~290 serials) + 11 risk accepted. Kendra's reaction: \"we're never going to catch up.\" The ~140 VDI nodes from the 2022 order (SO-30112042) are still on 2.11 and their ProCare Plus term is up next summer - Brooke Davis looking at whether to fold a renewal into an OFS bundle.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-09-09",
+  "kind": "meeting",
+  "author": "Tyler Barnes",
+  "contact": "Kendra Richardson",
+  "subject": "BMC remediation services scoping",
+  "body": "Attendees: Kendra Richardson, Joshua Campbell, Jamie Romero (Dir IT); Tyler Barnes, Alicia Watson (Server Specialist - new), Megan Martin, Brooke Adeyemi\n\nGoal: get Falcon off unpatched BMC for good, not another window-by-window effort.\n\nProposal discussed:\n- Orvane Deployment Services runs remediation remotely via Orvane Manage, 60 nodes/weekend, 5 weekends. Requires a firewall rule from the Manage appliance to VLAN 10 (Kendra OK).\n- Sequence: 2.0x -> 2.15 -> 2.19.4 -> 3.02.1. BIOS separate, only during the winter window.\n- In parallel: Mesh OOB mgmt network (Hao's design, 2x 48-port per DC), BMCs moved off VLAN 10.\n- Atlas firmware baseline enforced via Manage policy; drift alerts to Kendra's team.\n\nJoshua: FY26 budget is up (CIO got a bigger cap-ex number for cloud repatriation) but he'd rather spend it on Converge HCI nodes than \"paying to patch what we already own.\" Pushback that new Converge nodes on the same flat VLAN inherit the problem.\n\nDecisions: Kendra to take remediation proposal to change board 9/24. Joshua wants remediation bundled into the HCI deal.\n\nActions: Tyler bundle quote. Alicia to open an FY27 Servers & HCI opp - nothing open since the July loss (0065f00004ZlCTdAAN). Joshua mentioned Helixon is pitching a clean-slate HCI option.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-10-29",
+  "kind": "chatter",
+  "author": "Brooke Adeyemi",
+  "contact": "",
+  "subject": "TAM coverage gap",
+  "body": "heads up my last day on Falcon is 11/7, no backfill named yet. Open: 363 BMC findings (OSA-2024-017 + OSA-2025-077), change board approved first 2 remediation weekends for Dec but nobody has scheduled the engineers. Tracker is in the account files. @Carly Vaughn @Alicia Watson please don't let this drop.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-12-16",
+  "kind": "note",
+  "author": "Alicia Watson",
+  "contact": "Cameron Morin",
+  "subject": "Converge expansion on hold until remediation plan",
+  "body": "Status after call w/ Cameron Morin:\n- Replacement Atlas nodes from August (SO-30112888, $91,702, PO 202570011) are in and shipped on BMC 3.02.1 - only clean nodes in the fleet besides the Atlas 120 x16 from June (0065f00004ZlALPAA3).\n- Converge HCI expansion: Cameron's condition is no new nodes until there's a signed remediation plan for the existing fleet. That's 5 Servers & HCI opps lost since mid-2024, the last one in July (0065f00004ZlCTdAAN, $243,679). Not opening a new HCI opp until Jordan has the plan.\n- Helixon is in front of Joshua with a \"start clean\" HCI pitch - real risk if we don't fix this.\n- Carly's June order SO-30112784 ($154,191) got cancelled on Awaiting PO - Cameron's freeze applies to anything landing on the mgmt VLAN.\n- The Dec remediation weekends did NOT happen - TAM gap, no one scheduled engineers.",
+  "opportunity_id": "0065f00004ZlCTdAAN"
+ },
+ {
+  "date": "2026-01-13",
+  "kind": "meeting",
+  "author": "Jordan Morris",
+  "contact": "Kendra Richardson",
+  "subject": "TAM intro + remediation reset",
+  "body": "Attendees: Kendra Richardson, Bianca Becker, Vikram Perry; Jordan Morris (new TAM since 12/22), Alicia Watson\n\nKendra opened with \"you're the fifth TAM.\" Reviewed history so I don't make her repeat it - most of it is in Brooke's tracker.\n\nCurrent state (Insight 1/1): 363 open/not patched, 11 risk accepted. Counts by advisory: majority of nodes hit by both OSA-2024-017 and OSA-2025-077. Firmware still 2.04-2.19.4 across fleet. Winter break window used for Hyper-V/OS patching only.\n\nAgreed plan:\n- Spring break (week of 3/9) + 4 weekends after: Orvane-delivered remediation, 60 nodes/weekend, start with the VDI nodes (most exposed, on admin-reachable segment).\n- Firewall rule Manage -> VLAN 10 already in place since Oct (Vikram confirmed).\n- Mesh OOB network: still unfunded, Alicia to include in the FY27 HCI quote.\n- Monthly exposure report to Nathan Hill restarts in Feb.\n\nAction items: Jordan book Deployment Services engineers by 1/30 - Tyler's remediation services opp 0065f00004Zlsw9AAB ($88,571) is in negotiation, needs to close first. Bianca submit change request by 2/10. Alicia open FY27 Servers & HCI opp with remediation + Mesh line items (Cameron's precondition for any Converge expansion).",
+  "opportunity_id": "0065f00004Zlsw9AAB"
+ },
+ {
+  "date": "2026-01-21",
+  "kind": "chatter",
+  "author": "Lindsey Holt",
+  "contact": "",
+  "subject": "Falcon storage also on that mgmt VLAN",
+  "body": "fyi while we're in there: the Strata shelves we added in Feb (0065f00004ZkrvKAAR) are mostly eaten - Strata 500 B8043CV at 91.1% and CVC2M3Y at 88.6%, N7HQNLG at 72.9% but growing 4.3TB/mo. Firmware 6.2.0 / 6.4.4. Vault DP2400 SK8FSLW at 82.2%. All controllers' mgmt ports on VLAN 10, and Cameron won't approve more capacity there until remediation is signed. @Jordan Morris add to the remediation scope?",
+  "opportunity_id": "0065f00004ZkrvKAAR"
+ }
+]

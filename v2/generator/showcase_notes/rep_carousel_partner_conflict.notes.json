@@ -1,0 +1,182 @@
+[
+ {
+  "date": "2021-03-04",
+  "kind": "meeting",
+  "author": "Sneha Gauthier",
+  "contact": "Cody Smith",
+  "subject": "Intro / discovery - Lake Valley Engineering",
+  "body": "Attendees: Cody Smith (Dir IT), Kendra Diaz (VP Eng, joined last 20 min), Sneha Gauthier\n\nBackground: civil/MEP engineering + specialty trades shop out of Orlando, ~35 people. Cody is a one-man IT department, helpdesk overflow goes to Summit Point Solutions (local MSP, also an Orvane partner - they did the original server install).\n\nEnvironment:\n- ~20 desktops + ~12 laptops, mixed brands, most 4-5 yrs old. Field PMs complain about battery + weight on job sites.\n- 3 tower servers in a closet running vSphere, file server + license server + backup\n- Backup is Corsalis DataGuard to a NAS. Cody admits restores have never been tested.\n- Kendra's design group (4 people) runs CAD/BIM + point cloud work on desktops that \"take 20 min to open a model\".\n\nPain: design team productivity, field laptop reliability, Cody has no time.\n\nNext steps:\n- Quote Cadence 5 SFF for office staff, a few Aster 3 15 for field/PM, 2x Forge w/ mid-range pro GPU (12GB) for design. Kendra wants 48GB GPU boxes for point cloud - she'll confirm.\n- Cody to send asset list.\n- Ask about Summit Point role before quoting - Cody said \"they usually just order stuff for us\" so need to make sure we aren't quoting against our own partner.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2021-07-22",
+  "kind": "email_out",
+  "author": "Sneha Gauthier",
+  "contact": "Kristen Pham",
+  "subject": "Lake Valley - revised quote Q-LVE-0721 (Forge + monitors)",
+  "body": "Hi Kristen,\n\nThanks for the time on the phone yesterday. Attached is the revised quote with the changes Cody and Kendra asked for:\n\n- 1x Forge w/ mid-range pro GPU 12GB, 64GB ECC\n- 2x Clarity 27 monitors + Tether dock\n- ProCare Basic 3yr\n\nTotal comes to $4,954 before tax. The 48GB GPU units Kendra asked about are on a separate quote - pricing on those moved this month so I want to double check before sending.\n\nOnce you have the PO number just reply here and I'll get it booked, same as the desktop order in May (SO-30293687).\n\nThanks,\nSneha Gauthier\nAccount Executive | Orvane Technologies",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2021-08-12",
+  "kind": "chatter",
+  "author": "Sneha Gauthier",
+  "contact": "",
+  "subject": "Handoff - Lake Valley",
+  "body": "fyi I'm moving to the enterprise team, last day on this patch is 8/18. Lake Valley orders this year: SO-30293687 ($6,238, PO 045223, Cadence desktops) in May and SO-30293695 ($4,954, PO 350534, Forge) on 7/27 - both delivered. 48GB GPU quote still open w/ Kendra. Account plan + Cody's asset list are in my OneDrive folder, will share with whoever picks up the territory. Summit Point is close with Cody - be careful there.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2021-10-19",
+  "kind": "call",
+  "author": "Quinn Hoffman",
+  "contact": "Cody Smith",
+  "subject": "Intro call - new AE",
+  "body": "Intro call. I'm the new AE for the territory (account was unassigned since mid-Aug). Couldn't find Sneha's account plan - folder link in her chatter is dead.\n\nAsked Cody about environment, headcount, backup, refresh plans. He was pretty short with me - \"I went through all of this with Sneha in March.\" Re-captured what I could:\n- ~40 people now, growing\n- the desktop + workstation orders from spring/summer are deployed\n- backup still Corsalis DataGuard to NAS\n\nNew info: during the gap Summit Point quoted them 8 laptops (not Orvane - Cody wasn't sure what brand) and some switches. Cody said \"nobody from Orvane called for two months so I asked Gary at Summit.\" Need to find out from channel team whether Summit Point has a deal reg on this account.\n\nNext: send Cody a recap email so he doesn't have to repeat himself next time. Ask for 30 min with Kendra re: more GPU seats.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-01-11",
+  "kind": "email_in",
+  "author": "Quinn Hoffman",
+  "contact": "Kendra Diaz",
+  "subject": "RE: workstation pricing",
+  "body": "Quinn -\n\nWe're adding designers in Feb. I ended up buying the two big GPU machines on your website before Christmas because nobody got back to me on Sneha's quote. Summit Point is now asking if we want more through them. Can you beat their price or are you the same? Honestly don't care who we buy from, just need them by Feb 14.\n\nAlso please use this email, I don't check the work one much.\n\nKendra\n\nSent from my phone\n\n[QH note: web order is SO-30293708, $12,530, 12/21 - online store, not linked to anything.]",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-03-29",
+  "kind": "email_out",
+  "author": "Sean Nguyen",
+  "contact": "Cody Smith",
+  "subject": "Introduction - your new Orvane account manager",
+  "body": "Hi Cody,\n\nMy name is Sean Nguyen and I've just been assigned as the account manager for Lake Valley Engineering. I know there have been a few changes on our side so I apologize in advance if I ask things you've already answered.\n\nCould we grab 30 minutes next week? I'd like to understand:\n- how many employees/devices you're supporting today\n- what you're running for servers and backup\n- any projects coming up this year\n\nI also see an online store order from 3/2 (SO-30293720) that landed on our house account while nobody was assigned, and a workstation request from Kendra in January that I don't see closed - is that still open?\n\nBest,\nSean Nguyen\nInside Account Executive | Orvane Technologies\no: 407-555-0142",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-04-05",
+  "kind": "note",
+  "author": "Sean Nguyen",
+  "contact": "",
+  "subject": "Partner order SO-30293739 - no end user",
+  "body": "SO-30293739 ($3,927, PO 226075) booked through Summit Point Solutions 3/28 against Lake Valley - two Cadence desktops + monitors. No end-user contact on the order. Summit Point says end user info \"was on the email\". Order is credited to me as partner-sourced but I had zero involvement - I'd sent Cody an intro the next day. Raised with channel desk; no deal reg on file.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-10-20",
+  "kind": "call",
+  "author": "Lauren Marshall",
+  "contact": "Grace Pelletier",
+  "subject": "Intro - Lake Valley IT",
+  "body": "Called main IT line, got Grace Pelletier (new IT Manager, reports to Cody). Introduced myself as new AE. She laughed - \"you're the fourth Orvane person I've heard about this year and I've been here 2 months.\"\n\nNotes:\n- 50-ish people now. Windows 11 on maybe 1 in 10 machines, rest Win10. They want the office desktops on Win11 by spring - PC refresh is on the FY plan.\n- Oldest Orvane units are Cadence 5 SFF G2 + a couple of Cadence 7 SFF G2, plus the non-Orvane laptops Summit Point sold them last year.\n- Summit Point does their helpdesk tickets, patching, and \"most of the ordering\". Grace was under the impression Summit Point IS their Orvane rep.\n- Someone bought ~$25K on the online store on 9/28 (SO-30293762) - went to house account during the gap before I was assigned. Grace thinks it was the refresh desktops.\n\nAction: send Grace a one-pager on direct vs partner. Ask Cody re: refresh budget. Didn't get to backup/servers - next call.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2022-11-28",
+  "kind": "note",
+  "author": "Lauren Marshall",
+  "contact": "Kristen Pham",
+  "subject": "Partner order instead of my quote - credit hold",
+  "body": "Kristen ordered the 4 Win11 desktops through Summit Point (SO-30293766, $5,159, PO 926559) instead of using the quote I sent 11/10 which was cheaper per unit. Went on Credit Limit Exceeded hold. Asked why partner - she said Summit Point \"sends the PO paperwork for us.\" Need to get them a Premier portal so this at least lands at contract pricing.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-03-24",
+  "kind": "chatter",
+  "author": "Sean Nguyen",
+  "contact": "",
+  "subject": "Back on Lake Valley",
+  "body": "Back on Lake Valley after Lauren's move. Lauren's notes mention the Summit Point order but not whether anyone talked to channel, and Cody's asset list from 2021 is still nowhere. Summit Point just booked SO-30293777 ($3,800, PO 052427), credited to me again. Starting a running account summary in the description field so the next person isn't starting from zero. @channel desk can we get a ruling on who owns Lake Valley transactional - us or Summit Point?",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2023-10-17",
+  "kind": "meeting",
+  "author": "Grant Barnes",
+  "contact": "Jose Hernandez",
+  "subject": "Lake Valley - zero trust kickoff",
+  "body": "Attendees: Jose Hernandez (CISO - new role, first security hire), Cody Smith, Grant Barnes (new AE as of last week)\n\nContext: They just took a private equity investment and the board wants a security program. Jose's priorities for next 12 months = zero-trust.\n\nDiscussion:\n- Identity: moving to conditional access + device compliance. Wants hardware root of trust - asked whether all Orvane models support Orvane Shield attestation. Older Cadence G2 desktops don't report to Shield cleanly.\n- Network: flat /22, one VLAN for everything incl. the 3 server BMCs. Jose wants to segment - user / server / mgmt / IoT (site cameras, plotters). Mentioned Mesh switches, also said Summit Point quoted switches + firewall last month (didn't say whose).\n- Backup: Corsalis DataGuard to NAS, no immutability. Jose: \"if we get hit, we're done.\" This is the real pain.\n- Device count - Cody said \"about 20 desktops and a dozen laptops plus the workstations\"; our install base shows ~30 Cadence alone. Need to reconcile.\n\nI asked about backup sizing + retention - Cody said \"I already sent all this to Sean.\" Not in CRM.\n\nNext steps:\n- Grant to set up a storage/backup sizing call w/ storage person (Emily Garcia).\n- Get a Shield demo for Jose.\n- Figure out where Summit Point is on the switch quote before we compete with our own partner.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-01-30",
+  "kind": "chatter",
+  "author": "Grant Barnes",
+  "contact": "",
+  "subject": "Mesh switches - duplicate registration",
+  "body": "heads up - booked SO-30293847 ($8,193, PO 067285) direct yesterday for Lake Valley - Mesh access switches for Jose's segmentation. Today channel desk tells me Summit Point submitted a deal reg for the same switches last week. Partner rep says Cody asked them directly. Now we have two registrations on one deal. Escalating to channel mgr. This is the 3rd conflict.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-05-06",
+  "kind": "email_out",
+  "author": "Sean Nguyen",
+  "contact": "Mitchell Ward",
+  "subject": "Storage sizing - follow up",
+  "body": "Hi Mitchell,\n\nFollowing up on the storage/backup discussion - Grant mentioned before he moved on that you own the survey/photogrammetry data and would know growth rates. Could you send rough numbers for the project share and the drone imagery archive? Trying to get the sizing done before end of month.\n\nThanks,\nSean\n\n---\n[Auto-reply] Mitchell Ward is no longer with Lake Valley Engineering. Please contact itsupport@lakevalleyengineering.com.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-05-14",
+  "kind": "meeting",
+  "author": "Sean Nguyen",
+  "contact": "Emily Garcia",
+  "subject": "Storage + backup target sizing",
+  "body": "Attendees: Emily Garcia (Storage & Backup Mgr), Jose Hernandez, Sean Nguyen. (3rd time I own this account - Grant's notes had the zero-trust context, good.)\n\nCurrent state:\n- Corsalis DataGuard (keeping the software for now, license through 2026) writing to an aging NAS, no immutability, no offsite copy.\n- ~18TB on the file server today: project shares + drone/photogrammetry imagery growing fast. Emily estimates ~1.5TB/mo.\n- Nightly window 10pm-5am, overruns 2-3 nights a week. Full backups on weekends take until Mon morning.\n- RPO 24h today, Jose wants 4h for project shares. RTO for file server: \"same day\".\n\nProposal:\n- Strata 300 G4 (60TB) as primary file storage w/ immutable snapshots, 30-day retention lock - gets the project shares off the old NAS.\n- Old NAS demoted to Corsalis backup target until budget for a Vault appliance.\n- Mgmt interfaces on separate VLAN (ties into Jose's segmentation).\n- ProCare Plus 5yr.\n\nDecision makers: Jose signs off technically, Cody owns budget, Kristen Pham runs the PO. Jose said Summit Point \"asked about the storage project\" - told them it's direct. Need channel desk to back us up.\n\nNext: formal quote by 5/24. Need to create the opp - didn't have one yet.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2024-08-26",
+  "kind": "note",
+  "author": "Sean Nguyen",
+  "contact": "Kristen Pham",
+  "subject": "Strata 300 went through partner",
+  "body": "Strata 300 G4 is installed at Lake Valley - but it was bought through Summit Point, not off my quote. Kristen said Summit Point bundled install + their managed service and Cody signed that. Never got an opp created on our side, so nothing to close lost. Same month they bought $5,546 (SO-30293881, 7/30) and SO-30293891 (8/22) on the online store - card orders, nothing linked. Direct share of this account is shrinking.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-03-10",
+  "kind": "chatter",
+  "author": "Chad Walker",
+  "contact": "",
+  "subject": "Duplicate registration - SO-30293932",
+  "body": "@Sean Nguyen Lake Valley SO-30293932 ($14,442, PO 870209) came in through Summit Point 3/5 and is credited to me - but it's the same Win11 desktop + Strata expansion BOM I quoted direct to Caleb in Feb. Summit Point has a registration on it, so do we. Order is sitting on Awaiting PO, their AP is slow. Caleb didn't know there were two quotes. Also: no end-user contact on the partner order.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-03-20",
+  "kind": "note",
+  "author": "Sean Nguyen",
+  "contact": "Caleb Green",
+  "subject": "Procurement change + partner overlap",
+  "body": "Caleb Green is the new procurement manager - Kristen left in Feb, my last 2 emails to her bounced. Caleb's take: Summit Point \"already manages our stuff\" so partner quotes are easier for him to process. Jose wasn't in that decision. Pushed for a single point of contact; Caleb wants us and Summit Point to sort it out between us and send him one price. Escalated again to channel mgr.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-06-16",
+  "kind": "call",
+  "author": "Spencer Diaz",
+  "contact": "Cody Smith",
+  "subject": "Intro - new AE (again)",
+  "body": "Intro call w/ Cody. I'm taking over from Sean. Cody: \"Sixth one. I've stopped learning names.\" Fair.\n\nWhat I got (some of this is probably in Sean's notes, didn't have time to read all of them):\n- ~170 employees now, opening Jacksonville office. Our firmographics still say 84.\n- FY26 priority = network modernization. Summit Point is doing the switch/Wi-Fi refresh; Cody said \"talk to them\" when I asked about Mesh.\n- Storage/backup: Strata 300 + Corsalis software, Emily handles.\n- Design team growing - Thanh Morin runs AI/data platform now, wants more GPU workstations.\n\nAlso: Summit Point booked SO-30293954 ($19,841, PO 994211) on 6/12 - credited to me, I hadn't even had this call yet.\n\nNext: joint call w/ Summit Point rep to agree who does what. Kelsey Cox to work the workstation request.",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2025-12-30",
+  "kind": "note",
+  "author": "Kelsey Cox",
+  "contact": "Thanh Morin",
+  "subject": "Workstation order",
+  "body": "Booked SO-30293982 ($6,425, PO 416192) - Forge w/ mid-range GPU for Thanh's team + dock/monitors. Thanh wants 1 more per quarter as designers are hired. Michael's services order in Aug (SO-30293973) covered the deployment on the last batch. No opp on this one - Samuel, should I create one for the quarterly adds?",
+  "opportunity_id": ""
+ },
+ {
+  "date": "2026-01-14",
+  "kind": "meeting",
+  "author": "Samuel Perry",
+  "contact": "Cody Smith",
+  "subject": "Account review - new owner",
+  "body": "Attendees: Cody Smith, Emily Garcia, Caleb Green; Samuel Perry (AE since Dec), Chad Walker\n\nI re-introduced myself - Cody asked if I'd be here in 6 months. Committed to staying through FY27.\n\nInstall base / telemetry:\n- Strata 300 G4 (0WM0NNW) 54.6% of 60TB, +1.71TB/mo -> roughly 16 months to full. Firmware 7.7.1.\n- Backup still Corsalis DataGuard to the old NAS - no immutable copy. Vault conversation never happened.\n- 2 open security advisories, not patched (1 remediated). Emily didn't know about them - Summit Point \"handles firmware\". Summit Point doesn't have access to our support portal for these serials.\n- Win11 ~48%. Remaining Win10 machines mostly the older Cadence G2s + Summit Point non-Orvane laptops.\n\nPartner: Summit Point is still running the network refresh. Cody likes them - they answer the phone. Our gap periods are the reason.\n\nDecisions:\n- Proposed rules of engagement: Summit Point owns network + helpdesk-level transactional, direct owns storage/data protection and workstations. Cody OK in principle.\n- Michael's services opp 0065f00004jahNNAAY (firmware + advisory remediation) goes forward direct.\n\nActions:\n- Chad: firmware plan for advisories, get Emily on ProCare portal.\n- Samuel: joint meeting w/ Summit Point + channel mgr by 2/15.\n- Samuel: fix employee count (173 vs 84 in firmographics). Ask about Vault for an immutable backup copy.",
+  "opportunity_id": "0065f00004jahNNAAY"
+ }
+]

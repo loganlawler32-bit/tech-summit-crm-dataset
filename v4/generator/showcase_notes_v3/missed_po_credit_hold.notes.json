@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2021-06-15",
+    "kind": "meeting",
+    "author": "Jamie Kim",
+    "contact": "Tamara Bryant",
+    "subject": "Zenara - restaurant edge + network refresh",
+    "body": "Attendees: Tamara Bryant (CIO), Erin Foster (Dir IT), Karen Green (Network Eng); Orvane: Jamie Kim, Hao Stewart, Nathan Nakamura\n\n- ~140 restaurant locations + 2 commissaries + HQ in Overland Park. Each site: POS, kitchen display, back-office Cadence Micro, guest Wi-Fi.\n- Edge/IoT: walk-in cooler sensors and fryer telemetry, today on consumer-grade gear. Want Mesh SD-WAN edge per site plus Mesh PoE switching, central management.\n- DC: vSphere 7 in a colo, Google Cloud for loyalty app + analytics. Backup software is a third-party package on generic disk.\n- Procurement: Zenara AP is slow - Tamara warned us \"we pay, but we pay late.\" Net 30 terms on our side.\n\nActions: Hao - per-site Mesh BOM (SD-WAN Edge 300 + 24-port PoE); Nathan - edge reference design; Jamie - check credit line size with credit dept before we quote 140 sites.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-11-17",
+    "kind": "chatter",
+    "author": "Dominic Moore",
+    "contact": "",
+    "subject": "Zenara AP aging",
+    "body": "fyi Zenara invoices averaging ~70 days to pay on Net 30. Credit dept says normal for restaurant groups but their line is small, so any order >$75K will likely hold. Also Brooke's Vault order (SO-30203619, $228,114) went in with no PO at all. Plan accordingly.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-11-30",
+    "kind": "note",
+    "author": "Jamie Kim",
+    "contact": "",
+    "subject": "SO-30203619 short-pay",
+    "body": "SO-30203619 ($228,114 - Brooke's Vault DP x1) - booked without a PO; Erin Foster sent one after the fact. Then AP paid the first invoice short by ~$3.1K, citing \"quoted price.\" The quote had expired and we re-priced before booking. First time I've seen them short-pay; flagging for whoever has this next.",
+    "opportunity_id": "0065f00004eojU4AAI"
+  },
+  {
+    "date": "2023-07-28",
+    "kind": "note",
+    "author": "Min-jun Cook",
+    "contact": "",
+    "subject": "SO-30203683 booked - credit hold",
+    "body": "Lindsey's Strata 300 x2 (SO-30203683, $189,927, PO-2023-5364) went straight to Credit Limit Exceeded. Released after AP paid two invoices.\nRelated: I approved 38% discount on the Cadence lines in May (SO-30203657) to beat Varenta on the bid - approval email from my manager, not in deal desk (deal desk system was down). Their PO-2023-7175 came in at the 38% number and the order flagged PO amount mismatch. Customer now expects 38% as the standard. Need to document this somewhere.",
+    "opportunity_id": "0065f00004eovmgAAA"
+  },
+  {
+    "date": "2023-10-26",
+    "kind": "note",
+    "author": "Carly Vaughn",
+    "contact": "",
+    "subject": "Takeover - Zenara Co.",
+    "body": "New AO 10/20, inherited from Min-jun Cook with an 11-day gap. No handoff call.\nWhat I found:\n- Recurring AP issues: late pays, at least one short-pay in 2022, order holds for credit. Lindsey's Strata order in July (SO-30203683) went on credit hold; Min-jun's last portal order (SO-30203695) has no PO at all.\n- Discounts: some Cadence orders at 38%, others at 32%. No deal desk record of the 38% approvals. Customer thinks 38% is their contract rate - there is no contract.\n- Competitor: Varenta on client devices, aggressive.\n- Contacts: Nathan Reddy (CIO) primary, Laura Okafor (Dir IT Procurement) runs POs, Robert Lopez (AP Mgr) for invoices.\nTo do: get a pricing agreement in writing so AP stops disputing.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-02-20",
+    "kind": "email_in",
+    "author": "Carly Vaughn",
+    "contact": "Chloe Simmons",
+    "subject": "Invoice dispute - SO-30203704",
+    "body": "Hi Carly,\n\nWe've paid invoice for SO-30203704 at $194,704 instead of $213,546. The difference reflects the 38% discount Zenara has received on prior Orvane purchases. Please issue a credit memo for the balance or a corrected invoice.\n\nFor reference, this was ordered against PO-2023-7175.\n\nThank you,\nChloe Simmons\nAP Specialist | Zenara Co.\n\n---\n[Carly reply 2/21: Kendra's Vault was quoted at 32%; 38% was a one-time approval on Cadence in 2023. Asked deal desk to review. Note PO-2023-7175 is the same PO as last May's SO-30203657 - they never closed it. This order also sat on credit hold in December.]",
+    "opportunity_id": "0065f00004eoyEtAAI"
+  },
+  {
+    "date": "2024-09-24",
+    "kind": "note",
+    "author": "Carly Vaughn",
+    "contact": "",
+    "subject": "SO-30203775 - verbal PO, again",
+    "body": "SO-30203775 ($115,804) sat on Awaiting PO for two weeks. Laura finally gave us PO-2024-3478 - which is April's PO (Emily's SO-30203742). No credit hold this time because AP paid down AR in August. Credit dept told me Zenara's line is $350K and open AR was ~$210K before this order. The SO-30203704 short-pay balance is still open.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-04-01",
+    "kind": "note",
+    "author": "Emily Edwards",
+    "contact": "",
+    "subject": "SO-30203815 - PO 'verbal'",
+    "body": "SO-30203815 ($100,314) - Atlas hosts for the ERP integration tier, the slice we salvaged after 0065f00004epgRYAAY ($501,011) closed lost 3/21 to Varenta on price - booked with PO \"verbal.\" No hold this time, but AP will reject the invoice without a PO reference, which means another past-due.",
+    "opportunity_id": "0065f00004epgRYAAY"
+  },
+  {
+    "date": "2025-04-08",
+    "kind": "chatter",
+    "author": "Hao Stewart",
+    "contact": "",
+    "subject": "Same PO on everything",
+    "body": "SO-30203825 ($19,518) - Mesh SD-WAN Edge 300 units for new restaurants - booked on PO-2025-7123. That PO number is on almost every Zenara order this year (Kendra's SO-30203798 in March too), and Emily's last one went in on \"verbal.\" @Carly Vaughn can we get a standing fix before AP starts rejecting invoices?",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-08-27",
+    "kind": "meeting",
+    "author": "Megan Martin",
+    "contact": "Joshua Kowalski",
+    "subject": "Atlas refresh scoping - ERP + San Antonio DC",
+    "body": "Attendees: Joshua Kowalski (Dir Infra), Thomas Choi (Dir Infra), Travis Park (DC Ops), Brandon Sato (Storage Admin); Orvane: Megan Martin (SA), Alicia Watson, Carly Vaughn\n\nContext: ERP migration (cloud ERP + on-prem integration tier) is the driver; cutover planned for January. San Antonio distribution center opened this month and needs local compute.\n\nScope\n- Joshua's original ask: ~25 Atlas hosts across colo + San Antonio. Varenta quoting the same, same as in March.\n- Budget reality per Joshua: ~15 nodes (Atlas 240, 2-socket) in this FY, rest next year.\n- AI production: menu demand forecasting moving on-prem from GCP - 2 GPU nodes (48GB class) priced as a separate line.\n- vSphere 7 -> 8 upgrade with the new hosts; VMware per-core subscription - right-size core counts per node.\n- Storage: Strata 300 G4 T4V564N takes the ERP tier; HTX81DY at ~65%, Lindsey to look at expansion.\n\nDecisions: Alicia to quote both 25-node and 15-node versions; target close before ERP cutover.\nActions: Alicia - quotes by 9/10; Megan - rack elevation + VLAN plan (mgmt 110, vMotion 120, storage 130); Carly - check credit line headroom BEFORE we close (lesson learned).",
+    "opportunity_id": "0065f00004epe1IAAQ"
+  },
+  {
+    "date": "2025-12-05",
+    "kind": "email_in",
+    "author": "Carly Vaughn",
+    "contact": "Robert Lopez",
+    "subject": "RE: Past due statement - Zenara Co.",
+    "body": "Carly,\n\nResponding to the statement your collections team sent. Our position:\n1. Invoices for SO-30203850 and SO-30203854 were paid at the discount on our approved POs. The balance (~$5.9K combined) is disputed and will not be paid until we receive credit memos.\n2. Invoices for SO-30203869 are in approval. Our ERP migration freezes new vendor payments and new POs from Dec 15 until cutover (planned Jan 20).\n3. Please route all future invoices to ap@zenara.com, not to individual staff.\n\nRegards,\nRobert Lopez\nAccounts Payable Manager\nZenara Co.\n\n> From: Orvane Collections\n> Total past due: see attached. Account is approaching credit limit; new orders may be held.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-12-22",
+    "kind": "call",
+    "author": "Carly Vaughn",
+    "contact": "Laura Okafor",
+    "subject": "Aster 5 x106 - verbal + PO timing",
+    "body": "Laura Okafor (Dir IT Procurement) gave verbal on Aster 5 x106 ($181,064) for district managers + the San Antonio DC office. She cut PO-2025-7662 on 12/12, right before the ERP freeze, so this one has a real PO. Booked SO-30203875 ($195,550) to close the quarter - straight to Credit Limit Exceeded, open AR over limit.\nLaura also gave verbal on the second client wave (~$253K) and on Alicia's Atlas 240 deal. Those POs have to come from the new system - ERP freeze started 12/15, go-live 1/20. She'll send PO numbers \"first week after cutover.\"",
+    "opportunity_id": "0065f00004epZryAAE"
+  },
+  {
+    "date": "2026-01-02",
+    "kind": "chatter",
+    "author": "Gavin Sato",
+    "contact": "",
+    "subject": "Won opp with no order",
+    "body": "fyi Carly moved 0065f00004epmpDAAQ ($253,490, Client Devices wave 2) to Closed Won today off Laura's verbal so it lands in the quarter. No order, no PO - Laura says nothing gets cut until after the ERP freeze, and credit wouldn't release it anyway. Flagging so finance doesn't count it as booked.",
+    "opportunity_id": "0065f00004epmpDAAQ"
+  },
+  {
+    "date": "2026-01-05",
+    "kind": "chatter",
+    "author": "Alicia Watson",
+    "contact": "",
+    "subject": "Atlas 240 x15 won - on hold",
+    "body": "0065f00004epe1IAAQ Atlas 240 x15 closed won $574,365 (verbal from Joshua + Laura). SO-30203897 $611,699 booked on PO-2025-7123 - their 2025 catch-all blanket, already closed in their old system - and it went straight to credit hold. Lindsey's Strata shelf order (SO-30203885) did the same today. @Carly Vaughn can we get Laura to send a real PO number from the new ERP? Hosts need to land before ERP stabilization or the project uses cloud capacity instead.",
+    "opportunity_id": "0065f00004epe1IAAQ"
+  },
+  {
+    "date": "2026-01-07",
+    "kind": "email_out",
+    "author": "Gavin Sato",
+    "contact": "Accounts Payable",
+    "subject": "Zenara Co. - open invoices and remittance request",
+    "body": "Hello AP team,\n\nPer Robert's request we're sending to this mailbox. Attached is the current statement for Zenara Co. Summary:\n- Past due 60+ days: 4 invoices\n- Disputed short-pays: SO-30203850, SO-30203854 (credit memo review in progress on our side), plus the SO-30203704 balance from 2024\n- Current: SO-30203869\n\nWe have three orders on credit hold (SO-30203875, SO-30203885, SO-30203897). Paying the 60+ day items would let our credit team release them. Can you confirm payment timing given the ERP cutover?\n\nThank you,\nGavin Sato\nInside Account Executive | Orvane Technologies",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2026-01-09",
+    "kind": "note",
+    "author": "Brooke Davis",
+    "contact": "",
+    "subject": "OFS option for Atlas 240",
+    "body": "Looked at moving SO-30203897 (Atlas 240 x15, $611,699) to Orvane Financial Services FMV lease so it comes off the trade credit line. OFS credit says they'd approve, but internal policy won't book a new lease while the customer has 60+ day past-due on trade AR. Dead end until AP pays. Will revisit after cutover.",
+    "opportunity_id": "0065f00004epe1IAAQ"
+  },
+  {
+    "date": "2026-01-12",
+    "kind": "meeting",
+    "author": "Jordan Morris",
+    "contact": "",
+    "subject": "Internal - Zenara credit hold / deal desk",
+    "body": "Attendees (internal): Carly Vaughn, Jordan Morris (TAM, started 12/28), Gavin Sato, Brooke Davis, Alicia Watson, credit dept rep, deal desk\n\nOrders on hold\n- SO-30203875 $195,550 Aster 5 x106 - credit hold, PO-2025-7662 (real, cut pre-freeze)\n- SO-30203885 $85,455 Strata shelves (Lindsey) - credit hold, PO-2026-1836 (a number Laura reserved in the new ERP - AP can't see it yet)\n- SO-30203897 $611,699 Atlas 240 x15 - credit hold, PO-2025-7123 (catch-all blanket, closed in old system)\n- Total on hold: $892,704. Plus 0065f00004epmpDAAQ ($253,490) Closed Won with no order, and the San Antonio DC order (~$100K) Carly expects to book next week.\n\nCredit position (per credit rep)\n- Credit line $400K (Carly's 2024 note said $350K - credit says it was raised in March 2025). Open AR ~$395K, ~$140K of it 60+ days.\n- Even with valid POs, credit will not release ~$890K against a $400K line. Needs paydown + temporary limit increase, or OFS once past-due clears.\n- Short-pays: ~$5.9K disputed on two invoices + the 2024 SO-30203704 balance (~$18.8K) never resolved.\n\nRoot causes: undocumented 38% discount precedent from 2023; Zenara ERP freeze; PO-2025-7123 used as a catch-all; small credit line for account size.\n\nDecisions\n- Deal desk to issue one-time credit memos on disputed short-pays IF Zenara signs a pricing letter confirming 32% standard going forward.\n- No releases until 60+ day AR paid. No exceptions approved.\n\nActions: Carly - pricing letter to Laura Okafor; Gavin - weekly AR call with Robert Lopez; Jordan - align delivery dates once released; Brooke - re-run OFS after paydown.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2026-01-14",
+    "kind": "email_out",
+    "author": "Carly Vaughn",
+    "contact": "Thomas Choi",
+    "subject": "Atlas 240 delivery - need PO to release",
+    "body": "Hi Thomas,\n\nQuick update on the 15 Atlas 240 nodes: they're allocated and ready to ship, but the order is on hold until we have a valid PO and AP clears the past-due balance. Can you help push Laura's team for a PO number from the new ERP? Happy to join a call with you and Joshua.\n\nThanks,\nCarly Vaughn\nAccount Executive | Orvane Technologies\n\n> Automatic reply: Thomas Choi is no longer with Zenara Co. Please contact Joshua Kowalski.",
+    "opportunity_id": "0065f00004epe1IAAQ"
+  },
+  {
+    "date": "2026-01-21",
+    "kind": "note",
+    "author": "Carly Vaughn",
+    "contact": "",
+    "subject": "Zenara - status after ERP cutover slip",
+    "body": "ERP cutover slipped from 1/20 to 2/2. No POs until then.\nSan Antonio DC order booked 1/19 - SO-30203913 ($99,079, Mesh SD-WAN Edge + Aster for the DC office). PO-2026-8092 is another number reserved in the new ERP, so it's On Hold - Awaiting PO until AP can see it.\nFour orders now on hold: SO-30203875, SO-30203885, SO-30203897 (credit) + SO-30203913 (PO). ~$992K total, plus the $253K client wave with no order at all.\nRobert Lopez says the 60+ day items get paid in the first run on the new system. Laura has the pricing letter, \"reviewing with legal.\"\nForecast: Alicia's 0065f00004eplMMAAY ($405,098, Proposal) and Andrew's workstation opp 0065f00004epjBUAAY ($24,222) - not committing either until credit is clean. Varenta is quoting the servers.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2026-01-28",
+    "kind": "chatter",
+    "author": "Tyler Barnes",
+    "contact": "",
+    "subject": "ProCare renewal blocked",
+    "body": "fyi ProCare renewal on the Strata 300 G4 (T4V564N) can't be processed - credit hold covers services too. Coverage lapses 2/15. @Jordan Morris customer may call support and get bounced. @Lisa Spencer same for the Vault DP8900 (HM4WCHW) - still on 4.5.2 and now no support path to upgrade it.",
+    "opportunity_id": ""
+  }
+]

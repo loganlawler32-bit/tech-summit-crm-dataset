@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2021-03-09",
+    "kind": "meeting",
+    "author": "Ananya Ramirez",
+    "contact": "Patrick Marshall",
+    "subject": "FY22 exec alignment - Patrick Marshall / MMPH IT leadership",
+    "body": "Attendees: Patrick Marshall (CIO), Min-jun Katz (VP EA), Devin Peterson (Dir IT Procurement), Ananya Ramirez, Nathan Nakamura (SA), Hiro Gray (TAM)\n\nAgenda\n1. FY22 priorities\n2. Master Purchase Agreement (MPA) renewal - tier review\n3. PC refresh scope\n\nDiscussion\n- PC refresh is the #1 FY22 spend line. ~5,000 Cadence 3/5 desktops and ~2,500 Aster 5 laptops in the field, all Windows 10. Patrick wants a single standard image across \"the whole Magnolia Mesa family\" by end of FY23.\n- Infra: Hyper-V everywhere, Azure + AWS for dev/test and some SaaS. Backup is Corsalis DataGuard, contract runs through FY23. No appetite to touch backup this year.\n- MPA: Devin confirmed the MPA is signed at the holdings level and is meant to cover all controlled subsidiaries (\"anything we own >50%\"). He said several opcos still buy on their own and he has no visibility. Patrick: \"If it has our logo on it, it should be on your agreement.\" Nobody had a list of legal entities in the room.\n- Patrick asked whether volume from the opcos counts toward the MPA tier. Told him yes if they're on the hierarchy. Need to check what's actually linked.\n\nDecisions\n- MPA renewal at current tier, revisit in 12 months.\n\nAction items\n- Devin to send legal entity list (Ananya to chase)\n- Ananya / Dominic to reconcile entity list vs CRM hierarchy\n- Nathan to start PC refresh image + Autopilot-style zero touch design with EUC",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2021-05-18",
+    "kind": "email_out",
+    "author": "Dominic Moore",
+    "contact": "Hiro Mitchell",
+    "subject": "RE: Aster 3 quote - MPA pricing",
+    "body": "Hi Hiro,\n\nFollowing up on the Aster 3 14 quote from last week. I've re-run it at the MPA tier pricing (not the web price you mentioned on the phone), so you should see the difference on lines 1-4. Quote is valid through end of month.\n\nCan you confirm the ship-to for the second batch? The one on file is the old Commerce warehouse.\n\nThanks,\nDominic Moore\nInside Account Executive | Orvane Technologies\n\n---\n[Auto-reply] Hiro Mitchell is no longer with Magnolia Mesa Products Holdings. For purchasing requests please contact purchasing or Adam Holt.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2021-07-22",
+    "kind": "chatter",
+    "author": "Dominic Moore",
+    "contact": "",
+    "subject": "AO seat still open",
+    "body": "fyi - AO seat on MMPH still empty since Ananya moved. Two quotes waiting on MPA price approval and I don't know who signs. Using the Q1 approval as the reference for now. @Hiro Gray do you know who is covering?",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2021-09-02",
+    "kind": "note",
+    "author": "Kenji Gutierrez",
+    "contact": "",
+    "subject": "Account takeover notes - Magnolia Mesa Products Holdings",
+    "body": "Took over MMPH 8/19. No transition doc from Ananya, just the March meeting note and some open quotes Dominic was holding.\n\nWhat I know:\n- Select account, MPA at holdings level. Hierarchy in CRM shows 6 linked children: Brooks & Fischer Brands Inc., Redwood Crossing University, Magnolia Mesa Northeast LLC, Clearview Home Corp., Magnolia Mesa Health Inc., Magnolia Mesa Operations Co. Assuming that's the family.\n- Devin Peterson was supposed to send a legal entity list in March. Never logged as received. Will ask again but not top priority.\n- Big Atlas refresh in flight. February's SO-30014509 ($1.99M, Christopher Romero) is still flagged PO amount mismatch; April's SO-30015170 ($1.76M) shipped clean under Ananya. Next tranche (1U 1-socket for the Hyper-V clusters) with Darren Russell, targeting H1 next year.\n- PC refresh: Nathan Nakamura has the zero-touch design. Volume ~7K seats.\n- Corsalis is the incumbent on backup and has been sniffing around storage.\n\nPlan: land the Atlas refresh this quarter, PC refresh FY23.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2021-10-05",
+    "kind": "call",
+    "author": "Darren Russell",
+    "contact": "Danielle Hoffman",
+    "subject": "Atlas refresh - BMC firmware / rack plan / PO status",
+    "body": "Call w/ Danielle Hoffman (VP Enterprise Architecture).\n- Next tranche of 1U 1-socket nodes (1x16c / 128GB) confirmed for spring; Danielle wants the PO cut in Q4 but delivery after February. February's SO-30014509 is still flagged PO amount mismatch - PO-2021-6486 was cut before the final config. She'll get AP to amend it.\n- Racking: 20 nodes per rack, ~9.5 kW per rack measured on the pilot rack, they cap at 12 kW so OK. Two new rows in the LA DC.\n- BMC firmware: wants all nodes at same BMC level before they go into the Hyper-V failover clusters. Will have Hiro Gray push the baseline.\n- Side comment from Danielle: \"your other team\" sold Magnolia Mesa West a batch of Atlas 1U boxes last quarter and the West folks are asking whether they can join the LA clusters. I said I'd check - I don't know of another Orvane team on this account. Possibly a partner deal?\nNext: PO-2021-6486 amendment, BMC baseline doc to Danielle.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-01-12",
+    "kind": "email_in",
+    "author": "Brooke Kim",
+    "contact": "Courtney Ross",
+    "subject": "Backup window / Vault question",
+    "body": "Hi Brooke,\n\nQuick one. Our nightly window on the Corsalis DataGuard side is now running past 6am on the Hyper-V file clusters, roughly 7.5 hours for the full job set. We're at about 1.1 PB protected across sites. I'm not looking to replace DataGuard (contract runs another 18 months) but I'd like to understand whether the Vault DP2400 boxes we already have could act as a landing target for the file tier so we can split the window. RPO target for that tier is 24h, RTO 8h.\n\nAlso - is there any way to see what the subsidiaries are running? I get calls from the Lone Mill and First Bay people asking me for backup help and I have no idea what they bought.\n\nThanks,\nCourtney Ross\nStorage & Backup Manager\nMagnolia Mesa Products Holdings",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-02-15",
+    "kind": "chatter",
+    "author": "Hao Stewart",
+    "contact": "",
+    "subject": "First Bay Foods - Mesh quote request",
+    "body": "@Kenji Gutierrez heads up - got a request for 40x Mesh S1124 PoE from someone at First Bay Foods Corporation, says they're \"part of Magnolia Mesa.\" Account in CRM is owned by James Lefebvre (LE West), not in our hierarchy. He's already quoting them at standard LE discount. Do we care / should it be on the MPA? Not touching it until you say.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-09-14",
+    "kind": "meeting",
+    "author": "Monica Tremblay",
+    "contact": "Shannon Liu",
+    "subject": "DC refresh workshop - Hyper-V / Converge HCI / Strata consolidation",
+    "body": "Attendees: Danielle Hoffman, Chantal Medina (DC Ops), Shannon Liu (Virtualization), Courtney Ross; Orvane: Monica Tremblay (SA), Darren Russell, Ashley Fisher\n\nCurrent state\n- Hyper-V 2019 clusters on Atlas 1U 1-socket, ~1,800 hosts all in. Azure Stack-style hybrid not in scope.\n- Storage: 2x Strata 300 Unified Array G3 (DP5QSPK / MYRLM1R, 60TB each) for file, Strata 500 G3 (F7MVGLQ, 240TB) for block / SQL. Christopher Morris runs day-to-day.\n- Power: LA DC capped at 12 kW/rack, Chantal has 6 racks free in row F.\n\nOptions discussed\nA) Continue 3-tier: Atlas + Strata, add NVMe expansion shelf (Strata Expansion Shelf 24-NVMe G4) for SQL tier.\nB) Converge HCI for the VDI / thin client back-end (~1,060 Wisp 5000 thin clients) - 4-node clusters, 2U each, ~1.1 kW per node.\n- Shannon said Birch Peak Foods already ran a Converge HCI POC \"with your other Orvane team\" last spring and bought 8 nodes. They paid noticeably more than our MPA quote she saw. Shannon assumed they were on a different contract. I don't have Birch Peak in our hierarchy.\n\nDecisions\n- Price both A and B. Keep VLAN design (storage on 3100/3101, live migration 3200) unchanged.\n\nAction items\n- Monica: BOM for A and B by 10/7\n- Darren: check with Kenji on Birch Peak - who owns it?\n- Ashley: Strata 300 / 500 headroom forecast",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-11-30",
+    "kind": "email_out",
+    "author": "Kenji Gutierrez",
+    "contact": "Devin Peterson",
+    "subject": "Legal entity list for MPA coverage",
+    "body": "Hi Devin,\n\nCircling back on something from early 2021 that I think got lost when Ananya moved off the account. To make sure every Magnolia Mesa entity gets MPA pricing and that their spend counts toward your tier, I need the list of legal entities you consider covered.\n\nToday we have six linked under holdings in our system. If there are others (I've heard Birch Peak and First Bay mentioned), send them over and I'll get them attached.\n\nAlso happy to walk Lisa McDonald through how the tier is calculated before the renewal.\n\nThanks,\nKenji Gutierrez\nAccount Executive, Select Accounts\nOrvane Technologies",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2023-02-20",
+    "kind": "note",
+    "author": "Elizabeth Roberts",
+    "contact": "",
+    "subject": "FY24 account plan - MMPH",
+    "body": "New AO as of 2/1. Kenji's handoff: \"family is clean, 6 linked children, MPA renewal done.\" Nothing on the entity list he requested in Nov - I don't see a reply logged.\n\nFinancials: Devin said hardware cap for FY24 is ~$18M across infra + client. 3rd party has total IT budget ~$210M.\nPipeline: Kenji closed January strong - SO-30022042 ($2.12M) and SO-30022730 ($2.71M, no PO on file yet). Next: Atlas expansion with Morgan King, ~$3M+, FY25. Windows 11 at ~30%. Hybrid work enablement + DC refresh + cost reduction are the stated FY24 themes.\nRisks: no CIO since Patrick left; Corsalis pushing a storage + backup bundle; Whitney Ford (VP I&O) left in Nov.\nExec map: Min-jun Katz (VP EA) = technical decision; Devin Peterson = commercial; Susan MacDonald / Eric Kelly both show as CFO in CRM - need to figure out which is real.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2023-05-24",
+    "kind": "call",
+    "author": "Morgan King",
+    "contact": "Adam Holt",
+    "subject": "SO-30022730 PO + pricing question from Adam",
+    "body": "Adam Holt (buyer) called re SO-30022730 ($2,706,516) from January - still no PO on file and finance flagged it. He says the real PO is in final approval and will go to order mgmt this week. The next Atlas tranche (~$3M) will come on its own PO.\nThen Adam asked why Lone Mill Nutrition got a \"worse deal\" on Atlas 1U nodes than holdings did - their IT lead forwarded him a quote from an Orvane rep (James Lefebvre?) at roughly 12 pts less discount than our MPA rate. Adam thinks Lone Mill is a fully-owned sub since 2021. I told him I'd find out. Passing to Elizabeth.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2023-11-28",
+    "kind": "email_out",
+    "author": "Seo-yeon Li",
+    "contact": "Christopher Morris",
+    "subject": "Strata 300 DP5QSPK - firmware 6.14.2 + expansion shelf",
+    "body": "Hi Christopher,\n\nFollowing our call in October: the Strata 300 (DP5QSPK) is still on a 6.13 build. I'd like to bring it to 6.14.2 - MYRLM1R is already on 6.14 - and that release fixes the replication-lag issue you saw on the 3101 storage VLAN. Proposed window is Sat 12/9, 10pm-2am, non-disruptive with controller failover.\n\nOn capacity, DP5QSPK is trending ~1.3 TB/month, faster than its twin. I'll hold the expansion shelf quote until after the holidays.\n\nBest,\nSeo-yeon Li\nStorage Specialist | Orvane Technologies\n\n> Delivery has failed to these recipients: christopher.morris@magnoliamesaproducts.com",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-03-05",
+    "kind": "meeting",
+    "author": "Jamie Kim",
+    "contact": "Lisa McDonald",
+    "subject": "QBR - MMPH holdings (first QBR as AO)",
+    "body": "Attendees: Min-jun Katz, Lisa McDonald (VP Enterprise Architecture), Devin Peterson, Danielle Hoffman; Orvane: Jamie Kim, Monica Tremblay, Hiro Gray, Monica Howard\n\nAgenda: FY25 priorities, MPA tier review, zero-trust / network, PC refresh wave 2\n\nNotes\n- FY25 themes: zero-trust, PC refresh wave 2 (Win11 ~30%), network modernization (Brett to engage Grant Powell).\n- MPA: Lisa asked why holdings' spend is \"lower than our actual Orvane spend.\" I explained tier is calculated on the linked hierarchy (6 entities). She said \"we have a lot more than six.\" Devin thinks the delta is web/Premier purchases by individual sites and the Redwood Crossing University bookstore stuff. Agreed it's probably small.\n- Lisa also mentioned \"the Pacific team\" buys direct from Orvane and complains they never get MPA pricing. Assumed Pacific = west region sites already on our hierarchy. Need to confirm.\n- Hardware budget FY25: Devin said ~$20M (up from $18M).\n- Corsalis: DataGuard renewal coming; Corsalis offering storage at deep discount bundled.\n\nActions\n- Jamie: pull spend report by ship-to for \"Pacific\" sites\n- Hiro: Win11 readiness on Aster 3 G1 fleet\n- Brett: network discovery with Grant Powell",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-06-20",
+    "kind": "chatter",
+    "author": "Monica Howard",
+    "contact": "",
+    "subject": "Magnolia Mesa Pacific Holdings quote",
+    "body": "Logging for the record: Priya Brennan (MB) pinged me asking if \"Magnolia Mesa Pacific Holdings\" is ours - she has a ~$140K Aster 5 quote and the customer is quoting our MPA number at her. Checked hierarchy, it's not linked to MMPH, so I told her to quote standard MB discount and that they'd need a parent link request to get MPA. She said she'd ask her manager. Not sure it ever went anywhere.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-09-10",
+    "kind": "meeting",
+    "author": "Min-jun Chavez",
+    "contact": "Courtney Ross",
+    "subject": "Storage / backup working session",
+    "body": "Attendees: Courtney Ross, Shannon Liu, Chantal Medina; Orvane: Min-jun Chavez, Matthew Shah, Darren Park\n\n- Strata 300 DP5QSPK ~58% used, ~1.3 TB/mo; MYRLM1R ~54%. Strata 500 F7MVGLQ ~56% but growing ~4.7 TB/mo since the analytics data lake moved onto it - that one becomes the problem in FY26. Consolidation into a single Strata tier is on the FY26 list.\n- Vault DP5900 trio (GZTS0T6 / 32ZPN45 / K50SHJM, 120TB each) is the landing tier for file backups; DataGuard still does the catalog. GZTS0T6 is the hot one, ~74%.\n- Backup window now ~5h after splitting file tier to Vault. RPO 24h / RTO 8h met for file; SQL tier still on DataGuard direct.\n- Courtney again raised the subsidiaries: Lone Mill and Integrated Crossing Nutrition run their own small Strata + Vault footprints bought through \"different Orvane reps\" and want to replicate into LA. Matthew said he'd look at whether we can see those serials. We can't from this account.\n- Corsalis offered to take over the whole backup + storage stack at renewal.\n\nNext: Matthew to scope consolidation, Darren to price Vault expansion vs DataGuard renewal.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-02-12",
+    "kind": "call",
+    "author": "Ananya Ramirez",
+    "contact": "Danielle Hoffman",
+    "subject": "Back on MMPH - Atlas follow-up / M&A integration",
+    "body": "First call with Danielle since I came back on as server specialist (I had MMPH as AO in 2021 - funny). SO-30033574 ($2.26M, PO-2025-7987) from January is racked, no DOAs. Its twin SO-30033521 ($1.40M) got cancelled - PO never came - and Danielle wants it re-quoted for April.\nBig topic for FY26: M&A integration + storage consolidation. Holdings IT is absorbing data center ops for Birch Peak Foods, Lone Mill Nutrition and Integrated Crossing Nutrition into LA. Those three each have Atlas fleets that Danielle says were \"bought from Orvane under some other account.\" Wants warranty co-termed and ProCare under the holdings agreement.\nI asked if she knew who sells to them. She named James Lefebvre and Madison Perez. Neither is on our account team. This smells like the MPA isn't being applied. Need to raise with Jamie.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-06-17",
+    "kind": "chatter",
+    "author": "Terrence Rao",
+    "contact": "",
+    "subject": "ProCare renewal - Magnolia Mesa West LLC",
+    "body": "@Hiro Gray fyi - ProCare Plus renewal for Magnolia Mesa West LLC landed in my queue by mistake. Owner Carly Vaughn. Priced at standard ProCare rates, not the MMPH services rider. ~300 Atlas serials. Is West part of MMPH? Same address block as the LA DC. Sent back to Carly's team, didn't hear back.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-09-24",
+    "kind": "email_in",
+    "author": "Darren Park",
+    "contact": "Courtney Ross",
+    "subject": "Vault for Lone Mill site",
+    "body": "Hi Darren,\n\nLone Mill's IT lead told me they bought a Vault DP2400 from Orvane last year and paid quite a bit more than what you quoted us in June for the same box. Now that they report into Danielle, can we get them onto our agreement and co-term the support? We're planning to replicate them into the LA Vaults (32ZPN45 / K50SHJM) by end of Q4.\n\nSeparate note: GZTS0T6 is at ~89% now. I need the expansion pricing before budget lock.\n\nCourtney",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-12-15",
+    "kind": "note",
+    "author": "Jamie Kim",
+    "contact": "",
+    "subject": "FY27 account plan - Magnolia Mesa Products Holdings",
+    "body": "Summary\n- Select, Retention. Strong FY26: largest orders SO-30037947 ($3.18M, Matthew - storage consolidation phase 1) in June and SO-30040579 ($1.70M, Ananya) in Oct. SO-30039519 ($1.40M) sat on Awaiting PO in August.\n- Family: 6 linked subs (Brooks & Fischer, Redwood Crossing Univ, MM Northeast, Clearview Home, MM Health, MM Operations). Whitespace in family is limited - most spend already flows through holdings.\n- FY27 hardware budget: Devin indicated ~$22M (Lisa said \"flat\" - need to reconcile).\n\nFY27 pipeline (owner me unless noted)\n- Client devices: 0065f00004VqOrkAAF $548,788 Proposal; 0065f00004VqsJIAAZ $385,954 Negotiation; 0065f00004VqtAfAAJ $155,983 and 0065f00004VqJslAAF $152,366 Solution Design; plus 2 small ones. Win11 ~76% - remaining W10 is thin clients + plant floor Cadence.\n- Servers & HCI: 0065f00004VqfwjAAB $503,659 Proposal; 0065f00004VqRoaAAF $113,764 Negotiation; 0065f00004VrG7NAAV $36,384\n- Workstations: 0065f00004Vqa1vAAB $116,582 (Nathan) - Forge w/ 48GB GPU for Ji-woo's ML group\n- Services: 0065f00004VqLbLAAV $98,375, 0065f00004VqHwkAAF $67,806 + 2 small (ProCare co-term)\n- No storage or DP opp open - Vault expansion vs Corsalis DataGuard renewal not in pipeline yet (Matthew / Darren Park)\n\nCompetition: Corsalis bundling storage + backup at renewal.\nExec: Min-jun Katz, Devin Peterson, Lisa McDonald. Robin Nelson (Dir Infra) - check status, email bounced once.\nRisks: Corsalis bundle; Strata 500 F7MVGLQ ~87% and growing ~4.7 TB/mo, Vault GZTS0T6 ~92% (Matthew on it).",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2026-01-20",
+    "kind": "chatter",
+    "author": "Ahmed Vargas",
+    "contact": "",
+    "subject": "Integrated Crossing Nutrition - part of MMPH?",
+    "body": "@Jamie Kim quick q - is Integrated Crossing Nutrition Corp. part of Magnolia Mesa? Madison Perez is quoting them ProCare for ~120 Atlas nodes at standard rates and their IT director says they're \"covered under the MMPH master.\" No parent link in CRM. Also saw Ananya's Feb note saying the same thing about Birch Peak / Lone Mill. If these are all MMPH they've been paying standard instead of MPA for years and none of that spend counts toward the tier. Can we get a hierarchy review before the ProCare quote goes out?",
+    "opportunity_id": ""
+  }
+]

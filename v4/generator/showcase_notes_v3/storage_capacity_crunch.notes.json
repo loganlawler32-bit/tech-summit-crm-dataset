@@ -1,0 +1,182 @@
+[
+  {
+    "date": "2021-02-16",
+    "kind": "meeting",
+    "author": "Lindsey Holt",
+    "contact": "Matthew Johnson",
+    "subject": "Cloud repatriation - Strata sizing",
+    "body": "Attendees: Matthew Johnson (Dir Infra), John Spencer (Storage Admin), Shannon Levy (Infra Mgr); Orvane: Lindsey Holt, Vikram Allen\n\nBackground: MTPW is pulling workloads back on-prem from their hosted provider (cost + data sovereignty for the SCADA historian and GIS). Everything lands on vSphere in the Newark DC.\n\nSizing\n- Current on-prem: Strata 300 Unified Array G3, 60TB, file shares + GIS. ~30% used. Sits on the isolated OT management network, so no call-home.\n- Repatriated data: ~22TB today (GIS imagery, historian, asset mgmt DB, CCTV retention for treatment plants).\n- Proposed: keep the G3 as the primary array, add 2 expansion units, assume 2:1 data reduction on DB/VM, ~1:1 on imagery and video.\n- John wants an NVMe tier for the historian SQL, capacity tier for imagery.\n- Growth assumption we used: ~0.4 TB/month. Matthew thinks CCTV retention policy (90 days) could change - flagged as risk. With only 60TB this array has no slack if that happens.\n\nNext steps\n- Lindsey to send BOM + 5-yr ProCare options; customer wants FMV through Orvane Financial Services\n- Vikram to draft datastore layout and replication plan",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2021-03-03",
+    "kind": "email_out",
+    "author": "Nancy Moore",
+    "contact": "Gregory Bouchard",
+    "subject": "Cooperative contract renewal - Orvane pricing schedule",
+    "body": "Hi Gregory,\n\nAs discussed in January, our pricing schedule on the state cooperative contract renews 4/1. Attached is the updated schedule for Aster, Cadence and Strata lines. Nothing changes for MTPW's ordering process - purchasing can keep referencing the same contract number on POs.\n\nLet me know if your board needs anything from us before the April meeting.\n\nBest regards,\nNancy Moore\nAccount Executive, Public Sector\nOrvane Technologies\n\n---\nMail delivery failed: recipient address rejected (gregory.bouchard@meadowtrailpublicworks.com)",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2021-09-28",
+    "kind": "note",
+    "author": "Lindsey Holt",
+    "contact": "",
+    "subject": "Credit holds - MTPW",
+    "body": "SO-30078311 ($123,542, P9750569 - Owen's hosts) went to Credit Limit Exceeded hold. Released after AP (Patricia Gupta) paid two older invoices. My expansion order SO-30078354 ($85,556) sat on Awaiting PO and then got cancelled - purchasing let P3949417 lapse. Natalie's Vault (DP) deal also slipped after the lost September round. Told Nancy we should ask credit for a permanent limit increase - this will keep happening with every storage or backup order.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-06-08",
+    "kind": "call",
+    "author": "Vikram Allen",
+    "contact": "Shannon Levy",
+    "subject": "New ops site - replication design",
+    "body": "Shannon Levy re the new Newark-area operations site (expansion announced last month). ~180 staff, small server room (2 racks, 8 kW each).\n- Wants local copy of GIS + asset mgmt; considering a Strata 300 G4 at the new site with async replication from the primary Strata 300 G3 in the main DC. Link is 1 Gb MPLS, ~40% average utilization.\n- RPO 4h acceptable for GIS, 15 min for asset mgmt DB.\n- vSphere at both sites, separate vCenters.\n- Asked about backup at the new site - will use Vault replication back to Newark instead of a local appliance.\nWill send a design sketch. No budget until FY24 per Shannon.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-10-18",
+    "kind": "chatter",
+    "author": "Natalie Scott",
+    "contact": "",
+    "subject": "Vault firmware",
+    "body": "fyi Vault DP8900 9F844GL (Dec install) still on fw 4.2.x. 3rd time John has pushed the maintenance window. Two open advisories on that release. @Andrew Moore nothing for you, just venting.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2023-03-21",
+    "kind": "note",
+    "author": "Scott Wilson",
+    "contact": "",
+    "subject": "MTPW - storage takeover from Lindsey",
+    "body": "Picked up MTPW storage 2/1. Lindsey's handoff note was literally \"primary Strata fine, check in Q3.\"\nProblem: the primary Strata 300 G3 has never called home (OT network, security won't open it), so Insight has nothing on it. John's export says ~50% of 60TB on old 6.x firmware, growth ~0.8 TB/mo - 2x the 0.4 TB/mo from the 2021 sizing, mostly CCTV and GIS imagery. Only thing in Insight is the G4 at the new site (PG3JFY2) and the Vault (9F844GL).\nJohn Spencer is the day-to-day contact, very responsive. Matthew Johnson approves anything over $25K. Devin Tremblay listed as IT Manager but email bounced - probably gone.\nPlan: capacity review in Q3, firmware plan.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2023-11-20",
+    "kind": "chatter",
+    "author": "James Lefebvre",
+    "contact": "",
+    "subject": "New IT leader at MTPW",
+    "body": "heads up - MTPW named Dominic Holt CIO. Brittany Wang left early Nov (still Active in CRM, can someone fix). Trying to get intro via Spencer Iyer. @Scott Wilson @Vikram Allen will want you both in the first meeting.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-01-25",
+    "kind": "meeting",
+    "author": "James Lefebvre",
+    "contact": "Dominic Holt",
+    "subject": "Intro - Dominic Holt (CIO)",
+    "body": "Attendees: Dominic Holt (CIO), Spencer Iyer (VP I&O), Matthew Johnson; Orvane: James Lefebvre, Scott Wilson, Vikram Allen, Whitney Chavez (TAM)\n\nDominic's priorities (first 90 days)\n1. Data center refresh - wants a 5-yr view, not piecemeal\n2. AI pilot with Krista Bailey's engineering group (leak detection on pipe sensor data, predictive maintenance)\n3. Zero-trust follow-through\n\nStorage\n- Scott walked through the primary Strata 300 G3 trend from John's exports: ~63% used, ~1.3%/mo, runway to 90% roughly 20 months. Any CCTV policy change shortens that a lot. Asked Dominic to approve call-home so we stop flying blind - he'll take it to security.\n- Dominic: at his previous utility he ran Lumora and liked the subscription model (\"never buy a controller again\"). He's not committed to Strata. Wants options.\n- DP team scoping a second Vault for later this year (9F844GL is filling) - Dominic OK in principle.\n\nOther\n- Budget cycle: fiscal year starts July 1, capital requests due to the commission in March. Anything big has to be in the March package.\n\nActions\n- Scott: 3-yr capacity model + expansion vs refresh options before March\n- Vikram: AI pilot reference architecture (Atlas AI, 1-2 GPU nodes)\n- James: get on Dominic's calendar quarterly",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-06-06",
+    "kind": "note",
+    "author": "Sophie Patel",
+    "contact": "",
+    "subject": "LSE-300015 - services on FMV",
+    "body": "Booked Richard's deployment + ProCare uplift package ($63,202) on Fair Market Value lease LSE-300015, 36 months (2024-06-05 to 2027-06-05). Covers the primary Strata G3 firmware remediation and 9F844GL support uplift. Customer preferred FMV to keep it out of the capital package. Note for later: lease end 6/2027 lines up badly with the G3's ProCare end - whoever has this then should co-term.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-07-02",
+    "kind": "chatter",
+    "author": "Scott Wilson",
+    "contact": "",
+    "subject": "No TAM on MTPW",
+    "body": "TAM seat empty since Whitney left mid-June. Nobody is chasing John for the monthly exports - I only noticed the primary G3 crossed 70% because John emailed me. And my shelf order SO-30078442 ($72,668) hit Credit Limit Exceeded today. @James Lefebvre can we get someone assigned?",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-10-15",
+    "kind": "email_out",
+    "author": "Lisa Bryant",
+    "contact": "John Spencer",
+    "subject": "Capacity + firmware - primary Strata 300 G3, PG3JFY2, Vault",
+    "body": "Hi John,\n\nIntroducing myself - I'm your new Technical Account Manager, taking over from Whitney.\n\nTwo items:\n1. Primary Strata 300 G3: your September export shows ~75% used. It doesn't call home, so I can't alert on it - can we get call-home approved, or at least a monthly export? It's on an older 6.x build; I'd like to schedule an upgrade.\n2. The Strata 300 G4 at the new site (PG3JFY2) is only ~20% used. Please don't let it become the reason we skip the G3 plan - different site, different workload.\n3. Vault DP8900 9F844GL is behind on firmware - recommend 4.13.0. Also, William's second Vault (SO-30078496) shows cancelled on our side for no PO - checking with him.\n\nCan we get 30 minutes next week?\n\nThanks,\nLisa Bryant\nTechnical Account Manager | Orvane Technologies",
+    "opportunity_id": "0065f00004XrwOMAAZ"
+  },
+  {
+    "date": "2025-03-18",
+    "kind": "meeting",
+    "author": "Vikram Allen",
+    "contact": "Lauren Liu",
+    "subject": "Storage consolidation workshop",
+    "body": "Attendees: Matthew Johnson, John Spencer, Lauren Liu (Dir DC Ops), Shannon Levy; Orvane: Vikram Allen, Scott Wilson, Lisa Bryant, Owen Kruger\n\nGoal: FY25 storage consolidation - get the primary data off the G3 and a 3-yr plan in front of Dominic.\n\nCurrent state\n- Primary Strata 300 G3: ~80% of 60TB per John's export, growing ~1.3-1.5%/mo. Still no call-home. File shares + GIS + historian. ProCare decision this year.\n- Strata 300 G4 PG3JFY2 (new ops site): ~25%. Separate workload.\n- Vault DP8900 9F844GL ~77% (1.5 TB/mo); DP5900 G4 20LWM1F ~16%, just in.\n- vSphere 8, ~40 hosts. VMware renewal pricing up sharply - Matthew wants fewer hosts/sockets, which pushes more data onto shared storage, not less.\n\nOptions\nA) Expansion shelves on a new G4 in the main DC + migrate G3 data, retire the G3. Buys ~18 months.\nB) New Strata 500 tier consolidating all three arrays + NVMe-only performance tier. 5-yr.\nC) Do nothing until FY27 - not viable; Lauren agrees.\n- Lauren: power in Newark row C is 10 kW/rack, B fits in current footprint.\n- Lumora has been in twice. Matthew says they're quoting a subscription with a data reduction guarantee.\n\nActions\n- Scott: price A and B incl ProCare (no opp yet - create one)\n- Owen: host consolidation sizing\n- Lisa: firmware remediation plan for the Vaults",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-04-28",
+    "kind": "chatter",
+    "author": "Scott Wilson",
+    "contact": "",
+    "subject": "Storage quote cut from commission package",
+    "body": "Option B quote didn't make the commission package - Matthew said they want to \"see Lumora's subscription numbers first.\" Never got an opp opened for it, so it won't show as a loss anywhere. Not a Lumora win yet, but they're the reason it stalled. Primary G3 is at ~82% and nobody on their side seems worried.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-06-11",
+    "kind": "email_in",
+    "author": "James Lefebvre",
+    "contact": "Spencer Iyer",
+    "subject": "FW: Lumora proposal",
+    "body": "James,\n\nSharing in the spirit of transparency. Lumora's proposal (summary below) is for 150TB effective with a 4:1 data reduction guarantee, subscription billed annually, controller upgrades included. Dominic likes not having a capital ask every three years.\n\nBefore our July meeting I need your team's answer to three things:\n1. Why expand an array that's going to be ~85% full by fall instead of moving to something with an upgrade program?\n2. What's your real data reduction on our data (not marketing)?\n3. What does it cost us to stay on Strata for 5 years including ProCare?\n\nThanks,\nSpencer Iyer\nVP Infrastructure & Operations\nMeadow Trail Public Works\n\n---------- Forwarded message ----------\nFrom: Lumora account team\nSubject: MTPW - Lumora storage subscription proposal\n> 150TB effective / 40TB raw NVMe, 4:1 guarantee, evergreen controllers, migration services included...",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-07-28",
+    "kind": "note",
+    "author": "James Lefebvre",
+    "contact": "",
+    "subject": "MTPW - order holds + Lumora status",
+    "body": "Messy month.\n- SO-30078570 ($32,719) hit Credit Limit Exceeded in May; released by credit dept after I escalated. Still need a permanent limit increase - every quarter now.\n- SO-30078586 ($117,739, P3885265) - Owen's host add - went through clean, for once.\n- Lumora: Spencer's three questions answered (Scott built the data reduction numbers from John's array export - 2.4:1 actual on the G3). They're running a Lumora POC in the fall.\n- Primary G3 now ~86% per John. If the POC drags past November we're expanding under pressure or losing it.\n- William Barnes rolled off DP mid-month. DP coverage vacant.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-10-22",
+    "kind": "meeting",
+    "author": "Scott Wilson",
+    "contact": "John Spencer",
+    "subject": "Capacity review + ProCare renewal decisions",
+    "body": "Attendees: John Spencer, Matthew Johnson, Eric Bouchard (Procurement); Orvane: Scott Wilson, Vikram Allen, Lisa Bryant, Courtney Zhang (Services), Mohammed Patel (DP)\n\nCapacity (John's export for the G3, Insight for the rest)\n- Primary Strata 300 G3: ~88% of 60TB, ~1.5%/mo. 95% hard limit (snapshot reserve) in ~5 months. vCenter shows datastores higher because of thin provisioning.\n- Strata 300 G4 PG3JFY2 ~29%. Room, but wrong site/workload.\n- Vault DP8900 9F844GL ~84%, DP5900 G4 20LWM1F ~31%.\n\nRenewal decisions coming\n- ProCare on the G3: renew 1 yr vs retire into option A/B. Courtney quoting both.\n- Stopgap: Scott's single expansion shelf SO-30078631 ($51,640, P3466664) on FMV lease LSE-300030 - hit credit hold, released 10/21.\n- Vault: Mohammed scoping a capacity add for 9F844GL - no opp yet.\n- Strata expansion vs refresh still not decided. Lumora POC starts 11/10, 4 weeks.\n\nEric: commission meets in Feb for mid-year capital; anything we want approved needs a final quote by 1/15. Purchasing will need a sole-source justification if we go off the cooperative contract.\n\nActions\n- Scott: final A/B quote by 1/9\n- Courtney: ProCare renewal quote for the G3 (1 yr + co-term option)\n- Lisa: firmware windows before Lumora POC",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-11-19",
+    "kind": "chatter",
+    "author": "Monica Howard",
+    "contact": "",
+    "subject": "Where's the storage opp?",
+    "body": "Doing pipeline hygiene on MTPW - there's no Storage opp at all, ever. Only a workstation opp (0065f00004XsczFAAR, Ethan) and a software one (0065f00004XscSLAAZ, Emma). Strata expansion/refresh is the biggest thing on this account and it's not in forecast. Also Scott's shelf order SO-30078631 hit credit hold last month. @Scott Wilson you said you'd create it after the Lumora readout?",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-11-24",
+    "kind": "email_out",
+    "author": "Claire Lewis",
+    "contact": "Mohammed Anderson",
+    "subject": "Mesh core refresh - replication traffic",
+    "body": "Hi Mohammed,\n\nScott mentioned the Lumora POC is pushing replication traffic to the new ops site over the MPLS link. If storage moves either way, the Mesh core in Newark should get 25GbE uplinks to the storage VLAN. Can we set 30 min to look at port maps?\n\nThanks,\nClaire Lewis\nNetworking Specialist | Orvane Technologies\n\n[No response logged. Note added 12/3: Victoria Brennan says Mohammed left end of October.]",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-12-01",
+    "kind": "call",
+    "author": "Owen Kruger",
+    "contact": "Matthew Johnson",
+    "subject": "Servers & HCI - another loss",
+    "body": "Matthew confirmed 0065f00004XsI9EAAV ($206,743) is not happening this FY - host refresh is tied to the storage decision. He said if Lumora wins storage they'd look at Converge HCI vs keeping 3-tier and the answer changes. Closed it lost today. Will open a FY27 servers placeholder once storage is decided.",
+    "opportunity_id": "0065f00004XsI9EAAV"
+  },
+  {
+    "date": "2026-01-14",
+    "kind": "note",
+    "author": "James Lefebvre",
+    "contact": "",
+    "subject": "Status - Strata decision before commission",
+    "body": "Call with Spencer Iyer. He says the main Strata is \"88% full and growing 4% a month\" (from John's November export - the G3 still doesn't call home, so we have no Insight data to check it. Scott's math from the exports says closer to 1.5%/mo. Either way it's tight, and the October shelf only bought a few weeks). Another small order (SO-30078677, $15,124) hit credit hold 12/23. Lumora POC ended 12/12, they were \"impressed with data reduction.\" Dominic wants a side-by-side 5-yr TCO before the Feb commission meeting.\nProCare on the G3 lapses end of Q1 if not renewed - Courtney's quote is with Eric.\nAsk from Spencer: Orvane pricing on option B with Orvane Flex consumption pricing so it looks like Lumora's subscription. Looping Sophie Patel. Still no storage opp in CRM - creating it today.",
+    "opportunity_id": ""
+  }
+]

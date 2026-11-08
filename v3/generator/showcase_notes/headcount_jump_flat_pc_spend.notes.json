@@ -1,0 +1,173 @@
+[
+  {
+    "date": "2021-03-16",
+    "kind": "meeting",
+    "author": "Anthony Vaughn",
+    "contact": "Megan Robertson",
+    "subject": "Account planning - CPM Precision IT",
+    "body": "Attendees: Megan Robertson (Dir IT), Tyler Katz (IT Mgr), Grant Wilson (Desktop Support); Orvane: Anthony Vaughn, Thomas Herrera (SA), Hiro Gray (TAM)\n\n- ~2,500 named users across Seattle HQ + 4 fab plants. Plant floor uses shared Cadence SFF/Micro at stations; office staff on Aster 5/7.\n- Windows 10 20H2 standard image, SCCM, no zero-touch. Imaging done at HQ and shipped to plants - 2-3 days per device.\n- Infra: vSphere 6.7 on aging hosts, Oracle Cloud for ERP. Backup = tape + scripts. Megan knows it's a risk.\n- FY22 priority from the CISO is zero-trust; PC refresh not funded until FY23.\n- Megan wants a predictable refresh cycle (4 yrs) but finance keeps deferring.\n\nActions: Thomas - zero-touch provisioning overview (Autopilot-style via Orvane Manage); Hiro - warranty report on fleet; Anthony - check FY23 refresh budget timing with Megan.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2022-08-26",
+    "kind": "note",
+    "author": "Anthony Vaughn",
+    "contact": "",
+    "subject": "Office laptop wave 1 booked",
+    "body": "Booked SO-30195108 ($167,728, PO 230753) - Aster 5 16 G2/G3 for engineering + finance. First wave of the refresh Megan has been asking for (the May order SO-30195089 was mostly infra, and still has no PO on file). Next wave (plants) pushed to FY24 - budget.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2023-12-04",
+    "kind": "note",
+    "author": "Thanh Gutierrez",
+    "contact": "",
+    "subject": "Servers loss / client devices status",
+    "body": "0065f00004eExuAAAS ($502,836) closed lost 12/1 - budget, not competition. Megan says a freeze is likely after Q4 results and client refresh will be frozen with it. No client devices opp open at all. Win11 at ~25%. Plant floor still on Cadence 5 SFF G3 that won't take Win11 without a BIOS/CPU swap.",
+    "opportunity_id": "0065f00004eExuAAAS"
+  },
+  {
+    "date": "2024-02-29",
+    "kind": "note",
+    "author": "Madison Perez",
+    "contact": "",
+    "subject": "Takeover notes - CPM Precision",
+    "body": "AO as of 2/1. Thanh's notes are thin. Servers opp 0065f00004eExuAAAS ($502,836) closed lost in December; budget freeze confirmed after the 2/12 earnings miss. No client devices opp in pipeline.\nFleet: ~2,500 seats. Win11 ~25%. Big chunk of Aster 3 15 G2 / Aster 5 16 G2 and Cadence 5 SFF G3 aging out of warranty in FY26.\nInfra: vSphere 6.7 still (!), tape backup except one Vault. Atlas hosts from SO-30195199 (Feb 2023).\nContacts: Megan Robertson (Dir IT) main. Susan Jackson (Dir EUC) owns PC refresh now. Susan Hughes is on some old distribution lists - she's Facilities, not IT.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2024-04-17",
+    "kind": "chatter",
+    "author": "Darren Park",
+    "contact": "",
+    "subject": "DP loss",
+    "body": "Lost 0065f00004eEfmHAAS ($232,205). They bought one Vault DP5900 last June (SO-30195255) but won't fund the second - plants stay on tape + scripts another year. Nathan Morales was in favor, finance said no after the Feb earnings miss. Will come back in Q3 with a smaller Vault scope.",
+    "opportunity_id": "0065f00004eEfmHAAS"
+  },
+  {
+    "date": "2024-09-17",
+    "kind": "call",
+    "author": "Nathan Thompson",
+    "contact": "Susan Jackson",
+    "subject": "Win11 readiness + Forge for CAM",
+    "body": "Susan Jackson (Dir EUC).\n- Win11 stalled at ~25%. Blockers: ~300 devices below Win11 CPU baseline (Aster 3 15 G2, Aster 5 16 G2, Cadence 5 SFF G3 at plants with old BIOS), plus CAM software certification.\n- Laptop opp 0065f00004eFSlzAAG ($173,332) closed lost in July - same budget freeze.\n- CAM team (~44 users on Cadence 7 Tower G4) wants a real GPU for nesting/simulation. Forge with 24GB+ would do it.\n- No client budget in FY25 beyond break/fix. She's trying to get Win11 refresh funded for FY26 before Win10 end of support (Oct 2025).\nWill send Win11-eligibility report by serial from Insight.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-01-14",
+    "kind": "email_out",
+    "author": "Monica Howard",
+    "contact": "Tyler Katz",
+    "subject": "Windows 10 end of support - trade-in offer",
+    "body": "Hi Tyler,\n\nWith Windows 10 support ending in October, wanted to share our trade-in program: we give a per-device credit (based on model and condition) toward Win11-ready Aster / Cadence, and Orvane handles data wipe + certificate of destruction. For CPM's ~300 non-eligible devices it can cover a meaningful part of the refresh.\n\nHappy to walk through numbers with you and Susan.\n\nThanks,\nMonica Howard\nInside Account Executive | Orvane Technologies\n\n> Your message to tyler.katz@cpmprecision.com couldn't be delivered.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-03-12",
+    "kind": "meeting",
+    "author": "Madison Perez",
+    "contact": "Krista Hughes",
+    "subject": "Edge / AI pilot + Halberd acquisition briefing",
+    "body": "Attendees: Krista Hughes (CTO), Erin Reed (Dir Infra), Bryce Walker (VP Digital Transformation); Orvane: Madison Perez, Ananya Ramirez, Min-jun Chavez\n\nEdge / IoT\n- The 11 Outposts from November (SO-30195424) are live for plant-floor machine monitoring. Krista wants the same pattern at the acquired plants - 2 per plant.\n- AI pilot: vision QA on welds. Needs a central GPU server (Atlas AI class) for training, inference on the Outposts, data back to Oracle Cloud.\n\nAcquisition\n- Krista: CPM closed the Halberd Manufacturing acquisition last week (3/3). Adds ~1,700 people and three plants. Seat count goes from ~2,600 to ~4,300 (+65%).\n- Acquired company IT: Win10 on mixed, mostly older devices; their own AD/tenant; no MDM. Integration target 12 months.\n- Erin: datacenter consolidation of acquired sites into Seattle - will need hosts and storage.\n\nNote: Krista did not mention client budget for the acquired users. Need to ask.\nActions: Ananya - Atlas AI sizing for the pilot; Min-jun - consolidation sizing; Madison - set EUC meeting with Susan Jackson.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-04-02",
+    "kind": "note",
+    "author": "Madison Perez",
+    "contact": "",
+    "subject": "Aster 7 x83 closed won",
+    "body": "Closed won 0065f00004eFPpLAAW Aster 7 x83 ($159,768). Order SO-30195495 $170,153 (PO 213319). Exec + sales laptops, incl. Halberd leadership. That's the only client purchase planned this FY - 83 devices for ~1,700 new people.",
+    "opportunity_id": "0065f00004eFPpLAAW"
+  },
+  {
+    "date": "2025-05-08",
+    "kind": "meeting",
+    "author": "Nathan Thompson",
+    "contact": "Susan Jackson",
+    "subject": "EUC post-acquisition planning",
+    "body": "Attendees: Susan Jackson (Dir EUC), Derek Aguilar (Desktop Support Mgr), Michelle Carter (Desktop Eng); Orvane: Nathan Thompson, Monica Howard, Brooke Gutierrez (Financial Services), Hiro Gray\n\nNumbers (Susan's)\n- Users: ~4,300 after acquisition, was ~2,600. Devices under management ~3,100 (acquired co devices not in their tooling yet).\n- Win11: ~25% legacy CPM, ~0% acquired. Overall closer to 20%.\n- FY26 client budget: ~$650K, \"the same as last year.\" Covers maybe 500 devices. Acquisition did not come with an EUC budget line.\n\nDiscussion\n- Zero-touch: Michelle wants Autopilot-style provisioning through Orvane Manage, drop-ship from factory to plant. Imaging bottleneck is the real constraint for acquired users.\n- Brooke: Orvane Flex / DaaS - 36-month, refresh + ProCare + deployment in one monthly. Could move ~1,200 devices without a capital ask.\n- Derek: out-of-warranty repair tickets up ~40% since January.\n\nDecisions: Susan to take DaaS model to Heather Ford (COO) - CFO seat currently vacant.\nActions: Brooke - DaaS proposal for 1,200 units; Hiro - warranty roll-off report by serial; Nathan - Win11 pilot units (20) for acquired users.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-06-10",
+    "kind": "note",
+    "author": "Brooke Gutierrez",
+    "contact": "",
+    "subject": "DaaS proposal sent - CPM",
+    "body": "Sent Orvane Flex DaaS proposal to Susan Jackson / Heather Ford: 1,200 devices (900 Aster 5 14, 300 Cadence 3 SFF), 36 months, ProCare Plus, zero-touch deployment, trade-in credit on ~400 legacy units. Monthly fits under the $650K annual figure if phased over two years.\nHeather wants to see it next to a \"do nothing + extend warranty\" option. No opp created yet - Madison to decide.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-07-22",
+    "kind": "email_in",
+    "author": "Monica Howard",
+    "contact": "Derek Aguilar",
+    "subject": "Warranty expirations - list attached",
+    "body": "Monica,\n\nPulled this from our asset system - devices whose Orvane warranty ends this year:\n- Aster 3 15 G2 - 53 units (ended)\n- Aster 5 16 G2 - 109 units (ended)\n- Aster 3 15 G3 - 147 units (Oct)\n- Cadence 5 SFF G3 - 133 units (Dec)\nPlus about 600 devices at the acquired plants we haven't inventoried - several are 6+ years old.\n\nWe're doing out-of-warranty repairs with third-party parts at this point. Can you quote either extended warranty or replacement for the first two groups? Susan says we may have to pick one.\n\nDerek Aguilar\nDesktop Support Manager, CPM Precision Co.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-08-20",
+    "kind": "chatter",
+    "author": "Madison Perez",
+    "contact": "",
+    "subject": "Procurement turnover + portal order",
+    "body": "fyi Gregory Ortiz (procurement) left end of July and Omar Foster (VP EA) the week after. No buyer named yet - Ryan Campbell (IT Coordinator) is submitting POs. Connor Hamilton replacing Omar. SO-30195506 ($52,477) sat on \"waiting on PO from procurement\" because there was no procurement.\nThis month: SO-30195514 ($71,274) - Atlas hosts for the Halberd plant consolidation. Zero client devices. Again.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-09-10",
+    "kind": "call",
+    "author": "Nathan Thompson",
+    "contact": "Susan Jackson",
+    "subject": "Forge order + Win11 pilot",
+    "body": "SO-30195526 ($49,913, PO 258387) - Win11 pilot devices for Halberd users, delivered in August. Feedback good on zero-touch; Michelle got devices to plants in 2 days instead of 2 weeks.\nCAM Forge upgrade - no opp yet; Susan wants to bundle it with the client refresh if that ever gets funded.\nSusan: \"headcount went up 65% and my budget went up zero.\"",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-09-29",
+    "kind": "note",
+    "author": "Hiro Gray",
+    "contact": "",
+    "subject": "TAM risk note - Win10 EOS / legacy fleet",
+    "body": "Win10 end of support in ~2 weeks. CPM status:\n- Win11 ~25% of managed devices (unchanged since FY24). Acquired users essentially 0%.\n- ~310 CPM devices out of warranty or rolling off by Dec; ~600 uninventoried at acquired sites.\n- Plan of record per Susan: buy extended security updates for 1 yr, refresh \"when budget allows.\"\n- vSphere 6.7 also out of support. Backup still tape.\nRecommend we escalate to exec level - this is a security exposure (82 open unpatched advisories on our gear alone) and a refresh opportunity we're not forecasting.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-11-12",
+    "kind": "chatter",
+    "author": "Monica Howard",
+    "contact": "",
+    "subject": "No client opp in FY27",
+    "body": "CPM missed again (11/10). Expect PC refresh to slip again. Also - there is no Client Devices opp open for FY27 at all. Only servers (0065f00004eFxG2AAK, $577,803) and services ($35,041). Atlas AI 880 closed $447,770 last month - the AI pilot gets money, PCs don't. Brooke's DaaS proposal for 1,200 units is sitting with no opp. @Madison Perez should I create one?",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2025-12-09",
+    "kind": "meeting",
+    "author": "Madison Perez",
+    "contact": "Heather Ford",
+    "subject": "Exec briefing - FY27 EUC plan",
+    "body": "Attendees: Heather Ford (COO), Connor Hamilton (VP EA), Susan Jackson; Orvane: Madison Perez, Min-jun Chavez, Ethan King (Software - Orvane Manage/Shield), Brooke Gutierrez\n\n- Presented: 4,300 users vs ~3,100 managed devices; Win11 ~25%; ~900 devices out of warranty or Win11-ineligible incl acquired plants; ESU cost for 1 yr vs refresh.\n- Heather: margin pressure, no capital for client in FY27 H1. Open to OPEX if it's \"flat or better\" vs current spend. Wants 3-yr view.\n- Connor: acquired AD/tenant merge planned Q1 - wants devices enrolled in Orvane Manage before that.\n- Susan said FY27 client budget is ~$800K (vs $650K she told us in May) - Heather didn't confirm.\n\nDecisions: Heather OK'd a 300-device DaaS phase 1 for acquired users if monthly fits.\nActions: Brooke - re-cut DaaS at 300 + option for 900; Madison - open FY27 client devices opp; Ethan - Orvane Manage enrollment plan for tenant merge.",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2026-01-13",
+    "kind": "email_out",
+    "author": "Madison Perez",
+    "contact": "Grant Wilson",
+    "subject": "DaaS phase 1 - shipping schedule",
+    "body": "Hi Grant,\n\nFollowing Heather's approval in principle, here's the proposed shipping schedule for the first 300 devices (Aster 5 14 + Cadence 3 SFF) to the three acquired plants. Can you confirm receiving contacts and whether we should include Tether docks for the office users?\n\nBest,\nMadison Perez\nAccount Executive | Orvane Technologies\n\n> Delivery Status Notification (Failure): grant.wilson@cpmprecision.com",
+    "opportunity_id": ""
+  },
+  {
+    "date": "2026-01-27",
+    "kind": "chatter",
+    "author": "Ahmed Vargas",
+    "contact": "",
+    "subject": "ProCare vs refresh math",
+    "body": "@Madison Perez Derek asked for extended ProCare on the 162 G2 units + 133 Cadence 5 SFF G3. Quoted, but 2-yr extension on G2s is ~60% of a new device. Recommend we push those into DaaS phase 2 instead. Also - Grant Wilson left in August, Derek is your EUC ops contact.",
+    "opportunity_id": ""
+  }
+]
